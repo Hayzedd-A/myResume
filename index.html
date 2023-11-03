@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Resume</title>
+</head>
+<body>
+    <div class="settings">
+        <hr class="theme">
+        <div class="theme" id="themeSwitch"></div>
+    </div>
+    <div class="mainContainer">
+        <div class="sideMenu">
+            <div class="nameLogo">
+                <h1>AZEEZ</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="home active"><i><img src="icons/home.png" alt="home icon"></i>Home</li>
+                    <li class="about"><i><img src="icons/account.png" alt="about icon"></i>About</li>
+                    <li class="services"><i><img src="icons/services.png" alt="services icon"></i>Services</li>
+                    <li class="portfolio"><i><img src="icons/portfolio.png" alt="portfolio icon"></i>Portfolio</li>
+                    <li class="contact"><i><img src="icons/contact.png" alt="contact icon"></i>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainContentContainer">
+            <div class="mainContent home">
+                <div class="textContent">
+                    <h1>My name is <span>Adebayo Azeez</span></h1>
+                    <h2>I am a <span>Web Developer</span></h2>
+                    <p>
+                        I'm a fullstack web developer with 3 years intensive experience. I'm expert in creating modern responsive and functioning web applications.
+                    </p>
+                </div>
+                <div class="imageProfile">
+                    <img src="icons/resume_img.jpg" alt="profile image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        let darkBG = true;
+        $('#themeSwitch').click(function() {
+            $(this).css('right', ($(this).css('right') == '16px' ? '2.6em' : '1em'))
+
+            if (darkBG) {
+            document.documentElement.style.setProperty('--dark-fontColor', 'black')
+            document.documentElement.style.setProperty('--dark-bgColor', 'antiquewhite')
+            darkBG = false
+            }
+            else {
+                document.documentElement.style.setProperty('--dark-fontColor', 'white')
+                document.documentElement.style.setProperty('--dark-bgColor', 'rgb(32, 28, 28)')
+                darkBG = true
+            }
+
+            $('body').css({
+                'background-color': $('body').css('backgroundColor') == 'rgb(32, 28, 28)' ? 'rgb(255, 255, 255)' : 'rgb(32, 28, 28)',
+                'color': $('body').css('color') == 'rgb(32, 28, 28)' ? 'rgb(255, 255, 255)' : 'rgb(32, 28, 28)'
+            })
+            $('.sideMenu, .educations .content').css({
+                'background-color': $('.sideMenu').css('backgroundColor') == 'rgb(114, 99, 99)' ? 'rgb(178, 163, 163)' : 'rgb(114, 99, 99)',
+                
+            })
+        })
+
+        $('.menu li').click(function() {
+            $('.menu li').removeClass('active')
+            $(this).addClass('active')
+
+            let pageNumber = $('.menu li').index($(this))
+
+
+
+            function getFile() {
+                let xhr = new XMLHttpRequest()
+                xhr.open('GET', 'pages.txt', true)
+                xhr.send()
+
+                xhr.onload = function() {
+                    let page = this.response.split('---EndOfPage---')[pageNumber]
+                    $('.mainContentContainer').html(page)
+                }
+            }
+
+            getFile('pages.txt')
+        })
+    </script>
+</body>
+</html>
