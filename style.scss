@@ -42,6 +42,30 @@ a {
 img {
   width: 100%;
 }
+.menuIcon {
+  display: none;
+  @media (max-width: $tabl-breakpoint) {
+    display: inline;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    cursor: pointer;
+    &:hover {
+      svg path {
+        fill: $active;
+      }
+    }
+  }
+}
+.closeIcon {
+  width: 24px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+  // &:hover 
+
+}
 
 .settings {
   position: fixed;
@@ -132,6 +156,9 @@ img {
   }
   @media (max-width: $tabl-breakpoint) {
     right: 100%;
+    transition: all 0.5s ease-in-out;
+    left: -15em;
+
   }
 }
 

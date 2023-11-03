@@ -8,6 +8,9 @@
     <title>My Resume</title>
 </head>
 <body>
+    <div class="menuIcon">
+        <svg class="feather feather-menu" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+    </div>
     <div class="settings">
         <hr class="theme">
         <div class="theme" id="themeSwitch"></div>
@@ -16,6 +19,9 @@
         <div class="sideMenu">
             <div class="nameLogo">
                 <h1>AZEEZ</h1>
+            </div>
+            <div class="closeIcon">
+                <img src="icons/close_icon.png" alt="">
             </div>
             <div class="menu">
                 <ul>
@@ -67,6 +73,13 @@
                 'background-color': $('.sideMenu').css('backgroundColor') == 'rgb(114, 99, 99)' ? 'rgb(178, 163, 163)' : 'rgb(114, 99, 99)',
                 
             })
+        })
+
+        $('.menuIcon').click(function() {
+            $('.sideMenu').css('left', '0')
+        })
+        $('.closeIcon').click(function() {
+            $('.sideMenu').css('left', '-15em')
         })
 
         $('.menu li').click(function() {

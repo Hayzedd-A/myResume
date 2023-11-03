@@ -35,6 +35,30 @@ img {
   width: 100%;
 }
 
+.menuIcon {
+  display: none;
+}
+@media (max-width: 1040px) {
+  .menuIcon {
+    display: inline;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    cursor: pointer;
+  }
+  .menuIcon:hover svg path {
+    fill: rgb(255, 94, 0);
+  }
+}
+
+.closeIcon {
+  width: 24px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+
 .settings {
   position: fixed;
   z-index: 2;
@@ -120,6 +144,8 @@ img {
 @media (max-width: 1040px) {
   .sideMenu {
     right: 100%;
+    transition: all 0.5s ease-in-out;
+    left: -15em;
   }
 }
 
