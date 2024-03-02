@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "prompt";
+  src: url("prompt-font/Prompt-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: prompt, sans-serif;
+  background-color: rgb(32, 28, 28);
+  font-size: 16px;
+  color: white;
+}
+
+h1 {
+  margin: 5px 0;
+}
+
+p {
+  line-height: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  width: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.menuIcon {
+  display: none;
+}
+@media (max-width: 1040px) {
+  .menuIcon {
+    display: inline;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    cursor: pointer;
+  }
+  .menuIcon:hover svg path {
+    fill: rgb(255, 94, 0);
+  }
+}
+
+.closeIcon {
+  display: none;
+  width: 24px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+@media (max-width: 1040px) {
+  .closeIcon {
+    display: block;
+  }
+}
+
+.settings {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 6em;
+  height: 5em;
+  right: 0;
+}
+.settings hr {
+  width: 4em;
+  height: 10px;
+  border: none;
+  background-color: rgb(201, 184, 184);
+  right: 1em;
+  border-radius: 3px;
+  position: fixed;
+}
+.settings div {
+  position: absolute;
+  transition: 0.5s ease-in-out right;
+  right: 1em;
+  border-radius: 50%;
+  background-color: forestgreen;
+  height: 60%;
+  width: 40%;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+.mainContainer > div {
+  padding: 4em 2em;
+}
+.sideMenu {
+  position: fixed;
+  height: 100vh;
+  width: 15em;
+  display: flex;
+  flex-direction: column;
+  background-color: #726363;
+  z-index: 3;
+}
+.sideMenu .nameLogo {
+  display: flex;
+  justify-content: center;
+}
+.sideMenu .menu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.sideMenu ul {
+  width: 100%;
+  display: grid;
+  gap: 2em;
+  padding: 0;
+}
+.sideMenu li {
+  gap: 1em;
+  list-style: none;
+  border-bottom: 2px solid #ffbf99;
+  padding-bottom: 10px;
+  cursor: pointer;
+  line-height: 2em;
+  display: flex;
+  padding-left: 2em;
+}
+.sideMenu li.active {
+  color: rgb(255, 94, 0);
+}
+.sideMenu i {
+  margin-right: 1em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.sideMenu i img {
+  width: 100%;
+}
+@media (max-width: 1040px) {
+  .sideMenu {
+    right: 100%;
+    transition: all 0.5s ease-in-out;
+    left: -15em;
+  }
+  .sideMenu.slide-out {
+    left: -15em;
+  }
+  .sideMenu.slide-in {
+    left: 0;
+  }
+}
+
+.mainContentContainer {
+  height: 100vh;
+  margin-left: 15em;
+  overflow-x: hidden;
+}
+@media (max-width: 1040px) {
+  .mainContentContainer {
+    margin-left: 0;
+  }
+}
+
+.mainContent.home {
+  right: 20px;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.mainContent.home .textContent {
+  flex-grow: 1;
+}
+.mainContent.home .textContent span {
+  color: rgb(255, 94, 0);
+}
+.mainContent.home .imageProfile {
+  margin-top: 2em;
+}
+.mainContent.home .imageProfile img {
+  width: 300px;
+}
+.mainContent.home.oldPage {
+  z-index: -1;
+}
+@media (max-width: 820px) {
+  .mainContent.home {
+    flex-flow: column-reverse;
+  }
+}
+
+.heading {
+  margin: 12px;
+}
+.heading hr {
+  width: 10em;
+  height: 5px;
+  border: none;
+  background-color: rgb(255, 94, 0);
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.heading hr#bottom {
+  width: 5em;
+}
+
+.mainContent.about .textContent {
+  display: grid;
+  gap: 2em;
+}
+.mainContent.about .personalInfo {
+  display: flex;
+  gap: 2em;
+}
+.mainContent.about .personalInfo .info {
+  flex-basis: 50%;
+  flex-grow: 2;
+  display: grid;
+  gap: 2em;
+}
+.mainContent.about .personalInfo .progresses {
+  flex-grow: 6;
+  display: grid;
+  gap: 2em;
+}
+@media (max-width: 820px) {
+  .mainContent.about .personalInfo {
+    flex-flow: column-reverse;
+  }
+}
+.mainContent.about .details {
+  display: flex;
+  gap: 5px;
+}
+.mainContent.about .details > span {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  flex: 1;
+}
+.mainContent.about .details > span > span {
+  border-bottom: 1px solid gray;
+  padding: 10px 5px 10px 0;
+}
+.mainContent.about .details .label {
+  color: rgb(255, 94, 0);
+}
+.mainContent.about .details .content {
+  color: rgb(206, 196, 196);
+}
+@media (max-width: 760px) {
+  .mainContent.about .details {
+    flex-flow: column;
+  }
+}
+.mainContent.about .progress .text {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent.about .progress .bar {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  height: 5px;
+}
+.mainContent.about .progress .bar hr {
+  position: absolute;
+  border: none;
+  height: 5px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 2px;
+}
+.mainContent.about .progress .bar .bottom {
+  background-color: rgb(255, 94, 0);
+  width: 85%;
+}
+.mainContent.about .progress#html .bottom {
+  width: 90%;
+}
+.mainContent.about .progress#JavaScript .bottom {
+  width: 80%;
+}
+.mainContent.about .progress#git .bottom {
+  width: 50%;
+}
+.mainContent.about .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainContent.about .buttons button {
+  padding: 0.7em 2em;
+  border: none;
+  background-color: rgb(255, 94, 0);
+  border-radius: 2em;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.mainContent.about .educations .content {
+  background-color: #3b3434;
+  border-radius: 1em;
+  padding: 2em 1em;
+  display: grid;
+  height: -moz-min-content;
+  height: min-content;
+  grid-template-columns: 20px 1fr;
+  margin-bottom: 2em;
+}
+.mainContent.about .educations .content img {
+  width: 30px;
+  fill: white;
+}
+.mainContent.about .educations .content .bars {
+  grid-row: 1/span 4;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+.mainContent.about .educations .content .bars hr {
+  height: 100%;
+  background-color: rgb(255, 94, 0);
+  width: 5px;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+}
+.mainContent.about .educations .content .bars div {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 94, 0);
+  align-self: start;
+  position: relative;
+  right: 7px;
+  border-radius: 50%;
+}
+.mainContent.about .educations .year {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.mainContent.about .educations .year i {
+  display: inline-block;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.mainContent.servicePage p {
+  line-height: unset;
+}
+.mainContent.servicePage .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+}
+.mainContent.servicePage .services .service {
+  box-shadow: 1px 1px 1px 1px gray;
+  background-color: #ff8e4d;
+  padding: 1em;
+  border-radius: 8px;
+}

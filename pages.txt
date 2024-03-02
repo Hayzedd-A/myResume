@@ -1,0 +1,112 @@
+<div class="mainContent home">
+  <div class="textContent">
+      <h1>My name is <span>Adebayo Azeez</span></h1>
+      <h2>I am a <span>Web Developer</span></h2>
+      <p>
+          I'm a fullstack web developer with 3 years intensive experience. I'm expert in creating modern responsive and functioning web applications.
+      </p>
+  </div>
+  <div class="imageProfile">
+      <img src="icons/resume_img.jpg" alt="profile image">
+  </div>
+</div>
+---EndOfPage---<div class="mainContent about">
+      <div class="mainContent about">
+        <div class="textContent">
+          <div class="heading">
+            <h1>About Me</h1>
+            <hr id="top">
+            <hr id="bottom">
+          </div>
+          <div class="paragraph">
+            <h3>I'm Adebayo Azeez, I'm a <span> web developer</span></h3>
+            <p>I'm a talented programmer, I'm a computer science student of the Federal University of Agriculture,
+              Abeokuta. I build web application using HTML, CSS and JavaScript. I uses bootstrap for css and SCSS
+              framework, I uses jQuery for JavaScript and i also use AJAX for asycronous request for updating the content
+              of HTML. </p>
+          </div>
+          <div class="personalInfo">
+            <div class="info">
+              <div class="details">
+                <span class="row1">
+                  <span class="label">Birthday: </span><span class="content">21 Febraury 1999</span>
+                  <span class="label">LinkIn: </span><span class="content"><a href="https://linkedIn.com/in/adebayo-azeez-ola">linkedIn.com/in/adebayo</a></span>
+                  <span class="label">Degree: </span><span class="content">B.Sc computer science</span>
+                  <span class="label">City: </span><span class="content">Lagos</span>
+                </span>
+                <span class="row2">
+                  <span class="label">Country: </span><span class="content">Nigeria</span>
+                  <span class="label">Email: </span><span class="content">adebayoazeez37@yahoo.com</span>
+                  <span class="label">Phone: </span><span class="content">08081602424</span>
+                  <span class="label">Freelancing: </span><span class="content">Available</span>
+                </span>
+              </div>
+              <div class="buttons">
+                <button>Download CV</button><button>Hire me</button>
+              </div>
+            </div>
+            <div class="progresses">
+              <div class="progress" id="html">
+                <span class="text"><span>HTML</span><span>90%</span></span><span class="bar">
+                  <hr>
+                  <hr class="bottom">
+                </span>
+              </div>
+              <div class="progress" id="css">
+                <span class="text"><span>CSS</span><span>85%</span></span><span class="bar">
+                  <hr>
+                  <hr class="bottom">
+                </span>
+              </div>
+              <div class="progress" id="JavaScript">
+                <span class="text"><span>JavaScript</span><span>80%</span></span><span class="bar">
+                  <hr>
+                  <hr class="bottom">
+                </span>
+              </div>
+              <div class="progress" id="git">
+                <span class="text"><span>GIT</span><span>50%</span></span><span class="bar">
+                  <hr>
+                  <hr class="bottom">
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="history">
+            <div class="educations">
+              <h1>Education</h1>
+              <div class="content">
+                <div class="bars">
+                  <hr>
+                  <div style="--p: 1;" class="bar"></div>
+                  <div style="--p: 2;" class="bar"></div>
+                  <div style="--p: 3;" class="bar"></div>
+                  <div style="--p: 4;" class="bar"></div>
+                </div>
+                <div class="education repair">
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2013 - 2015</div>
+                  <h3>Phones and Laptops Repiar</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                </div>
+                <div class="education electronics">
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2015 - 2017</div>
+                  <h3>Electrical installation and Electronics Repair</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                </div>
+                <div class="education desktopPublishing">
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2017 - 2018</div>
+                  <h3>Microsoft packages and desktop Publishing</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                </div>
+                <div class="education computeScience">
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2017 - 2018</div>
+                  <h3>Bachelor of science in computer science</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+---EndOfPage---

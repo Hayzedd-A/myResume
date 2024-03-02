@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generate content dynamically</title>
+    <style>
+        label {
+            display: block;
+            margin: 1em;
+        }
+        form {
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="email">email
+            <input type="email" id="email" class="mainForm" placeholder="eg  example@email.com">
+        </label>
+    </form>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+
+        let formData = {
+            'password': ['password', 'password', 'at least of 8 characters long'],
+            'Full name': ['text', 'fullname', 'eg, John Doe']
+        }
+
+        const element = $('label[for="email"]').clone()
+        const parent = $('form')
+        $.each(formData, function(name, value){
+            parent.append(element.attr('for', value[1]))
+            element = $('label[for="email"]').clone()
+            console.log($)
+        
+
+        })
+
+    </script>
+</body>
+</html>
