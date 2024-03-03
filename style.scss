@@ -3,6 +3,7 @@ $dark-bgColor: rgb(32, 28, 28);
 $light-fontColor: black;
 $light-bgColor: antiquewhite;
 $active: rgb(255, 94, 0);
+$activeSec: rgb(135, 52, 4);
 $design: lighten(
   $color: $active,
   $amount: 30,
@@ -93,12 +94,16 @@ img {
   }
   div {
     position: absolute;
-    transition: 0.5s ease-in-out right;
+    transition: 0.5s ease-in-out rotate;
+    transform-origin: center;
     right: 1em;
     border-radius: 50%;
-    background-color: forestgreen;
-    height: 60%;
+    // background-color: forestgreen;
+    height: 50%;
     width: 40%;
+    svg {
+      fill: white;
+    }
   }
 }
 
@@ -395,6 +400,9 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
+    @media (max-width: $tab-breakpoint) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   .service {
     display: grid;
@@ -403,7 +411,7 @@ img {
     gap: 1em 2em;
     transition: scale 0.1s linear;
     scale: 1;
-    background-color: #732a00;
+    background-color: lighten($active, 10);
     padding: 1em;
     border-radius: 1em;
     height: 100%;
@@ -417,5 +425,7 @@ img {
     .icon {
       width: unset;
     }
+  }
+  @media (max-width: $tab-breakpoint) {
   }
 }
