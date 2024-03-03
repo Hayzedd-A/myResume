@@ -372,5 +372,28 @@ img {
 }
 .mainContent.portfolio .services {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+.mainContent.portfolio .service {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em 2em;
+  transition: scale 0.1s linear;
+  scale: 1;
+  background-color: #732a00;
+  padding: 1em;
+  border-radius: 1em;
+  height: 100%;
+}
+.mainContent.portfolio .service:hover {
+  scale: 1.1;
+}
+.mainContent.portfolio .service p {
+  grid-column: span 2;
+  line-height: normal;
+}
+.mainContent.portfolio .service .icon {
+  width: unset;
 }
