@@ -370,3 +370,7 @@ img {
   padding: 1em;
   border-radius: 8px;
 }
+.mainContent.portfolio .services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

@@ -85,22 +85,22 @@
                 </div>
                 <div class="education repair">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2013 - 2015</div>
-                  <h3>Phones and Laptops Repiar</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
-                </div>
-                <div class="education electronics">
-                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2015 - 2017</div>
-                  <h3>Electrical installation and Electronics Repair</h3>
+                  <h3>Phones, Laptops, and electronics Repiar</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
                 </div>
                 <div class="education desktopPublishing">
-                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2017 - 2018</div>
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2015 - 2017</div>
                   <h3>Microsoft packages and desktop Publishing</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
                 </div>
                 <div class="education computeScience">
-                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2017 - 2018</div>
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2018 - 2023</div>
                   <h3>Bachelor of science in computer science</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                </div>
+                <div class="education developer">
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2020 - TILL DATE</div>
+                  <h3>Frontend web developer</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
                 </div>
               </div>
@@ -108,5 +108,48 @@
           </div>
         </div>
         </div>
+        </div>
+---EndOfPage---<div class="mainContent servicePage">
+          <div class="textContent">
+            <div class="heading">
+              <h1>Services</h1>
+              <hr id="top">
+              <hr id="bottom">
+            </div>
+            <div class="services">
+              <div class="service">
+                <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
+                <div class="title">Web Design</div>
+                <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
+              </div>
+              <div class="service">
+                <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
+
+                <div class="title">Web Design</div>
+                <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
+              </div>
+              <div class="service">
+                <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
+                <div class="title">Web Design</div>
+                <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
+              </div>
+              <div class="service">
+                <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
+                <div class="title">Web Design</div>
+                <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
+              </div>
+              <div class="service">
+                <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
+                <div class="title">Web Design</div>
+                <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
+              </div>
+              <div class="service">
+                <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
+                <div class="title">Web Design</div>
+                <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
+              </div>
+
+            </div>
+          </div>
         </div>
 ---EndOfPage---

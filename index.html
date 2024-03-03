@@ -125,18 +125,26 @@
         });
       });
 
-      $(".menuIcon").click(function () {
+      const slideIn = () => {
         $(".sideMenu").removeClass("slide-out");
         $(".sideMenu").addClass("slide-in");
-      });
-      $(".closeIcon").click(function () {
+      };
+      const slideOut = () => {
         $(".sideMenu").removeClass("slide-in");
         $(".sideMenu").addClass("slide-out");
+      };
+
+      $(".menuIcon").click(function () {
+        slideIn();
+      });
+      $(".closeIcon").click(function () {
+        slideOut();
       });
 
       $(".menu li").click(function () {
         $(".menu li").removeClass("active");
         $(this).addClass("active");
+        slideOut();
 
         let pageNumber = $(".menu li").index($(this));
 

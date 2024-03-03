@@ -177,6 +177,7 @@ img {
   height: 100vh;
   margin-left: 15em;
   overflow-x: hidden;
+  // transition: all ease-in-out 0.5s;
   @media (max-width: $tabl-breakpoint) {
     margin-left: 0;
   }
@@ -387,5 +388,11 @@ img {
   }
 
   .services {
+  }
+}
+.mainContent.portfolio {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
