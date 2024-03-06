@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="./library/pdfobject.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>My Resume</title>
   </head>
@@ -41,7 +53,7 @@
 
     <div class="mainContainer">
       <div class="sideMenu">
-        <div class="nameLogo">
+        <div class="nameLogo animate__animated animate__fadeInRight">
           <h1>AZEEZ</h1>
         </div>
         <div class="closeIcon">
@@ -49,21 +61,21 @@
         </div>
         <div class="menu">
           <ul>
-            <li class="home active">
+            <li class="home animate__animated animate__fadeInLeft active">
               <i><img src="icons/home.png" alt="home icon" /></i>Home
             </li>
-            <li class="about">
+            <li class="about animate__animated animate__fadeInLeft">
               <i><img src="icons/account.png" alt="about icon" /></i>About
             </li>
-            <li class="services">
+            <li class="services animate__animated animate__fadeInLeft">
               <i><img src="icons/services.png" alt="services icon" /></i
               >Services
             </li>
-            <li class="portfolio">
+            <li class="portfolio animate__animated animate__fadeInLeft">
               <i><img src="icons/portfolio.png" alt="portfolio icon" /></i
               >Portfolio
             </li>
-            <li class="contact">
+            <li class="contact animate__animated animate__fadeInLeft">
               <i><img src="icons/contact.png" alt="contact icon" /></i>Contact
             </li>
           </ul>
@@ -71,22 +83,32 @@
       </div>
       <div class="mainContentContainer">
         <div class="mainContent home">
-          <div class="textContent">
+          <div class="textContent animate__animated animate__fadeInRight">
             <h1>My name is <span>Adebayo Azeez</span></h1>
             <h2>I am a <span>Web Developer</span></h2>
             <p>
-              I'm a fullstack web developer with 3 years intensive experience.
+              I'm a fullstack web developer with 4 years intensive experience.
               I'm expert in creating modern responsive and functioning web
               applications.
             </p>
           </div>
-          <div class="imageProfile">
-            <img src="icons/resume_img.jpg" alt="profile image" />
+          <div class="imageProfile animate__animated animate__fadeInDown">
+            <img
+              src="icons/resume_img.jpg"
+              loading="lazy"
+              alt="profile image"
+            />
           </div>
         </div>
       </div>
+      <div class="mainCV">
+        <div class="CVPDF"></div>
+      </div>
     </div>
     <script src="jquery-3.6.1.min.js"></script>
+    <script src="./library/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="./library/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
     <script>
       let darkBG = true;
       $("#themeSwitch").click(function () {
@@ -174,11 +196,69 @@
           xhr.onload = function () {
             let page = this.response.split("---EndOfPage---")[pageNumber];
             $(".mainContentContainer").html(page);
+            // Target element to observe
+            const animateElements =
+              document.querySelectorAll(".animate__animated");
+
+            // Start observing the target element
+            animateElements.forEach((element) => {
+              observer.observe(element);
+            });
           };
         }
 
         getFile("pages.txt");
       });
+
+      // Create an Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Element is in the viewport
+              console.log("Element is in the viewport");
+              $(".animate__fadeInRight").addClass("animate__animated");
+            } else {
+              // Element is not in the viewport
+              console.log("Element is not in the viewport");
+            }
+          });
+        },
+        {
+          // Configuration options
+          root: null, // Use the viewport as the root
+          rootMargin: "0px", // No margin around the viewport
+          threshold: 0, // Trigger callback when target element enters or exits the viewport completely
+        }
+      );
+
+      // Target element to observe
+      const animateElements = document.querySelectorAll(".animate__animated");
+
+      // Start observing the target element
+      animateElements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      $(".mainContainer").on("click", "#downloadCV", function () {
+        let dialogHeight = $("body").height() * 0.9;
+        $(".mainCV").dialog({
+          autoOpen: false,
+          width: "70vw",
+          height: dialogHeight,
+        });
+
+        console.log("dialog prompt");
+        $(".mainCV").dialog("open");
+        let options = {
+          pdfOpenParams: {
+            zoom: "Fit",
+          },
+        };
+        PDFObject.embed("AzeezCV.pdf", ".CVPDF", options);
+      });
+
+      // $("#downloadCV").click(function () {});
     </script>
   </body>
 </html>

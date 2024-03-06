@@ -1,24 +1,26 @@
 <div class="mainContent home">
-  <div class="textContent">
-      <h1>My name is <span>Adebayo Azeez</span></h1>
-      <h2>I am a <span>Web Developer</span></h2>
-      <p>
-          I'm a fullstack web developer with 3 years intensive experience. I'm expert in creating modern responsive and functioning web applications.
-      </p>
+  <div class="textContent animate__animated animate__fadeInRight">
+    <h1>My name is <span>Adebayo Azeez</span></h1>
+    <h2>I am a <span>Web Developer</span></h2>
+    <p>
+      I'm a fullstack web developer with 3 years intensive experience.
+      I'm expert in creating modern responsive and functioning web
+      applications.
+    </p>
   </div>
-  <div class="imageProfile">
-      <img src="icons/resume_img.jpg" alt="profile image">
+  <div class="imageProfile animate__animated animate__fadeInDown">
+    <img src="icons/resume_img.jpg" alt="profile image" />
   </div>
 </div>
 ---EndOfPage---<div class="mainContent about">
       <div class="mainContent about">
         <div class="textContent">
-          <div class="heading">
+          <div class="heading animate__animated animate__fadeInRight">
             <h1>About Me</h1>
             <hr id="top">
             <hr id="bottom">
           </div>
-          <div class="paragraph">
+          <div class="paragraph animate__animated animate__fadeInLeft">
             <h3>I'm Adebayo Azeez, I'm a <span> web developer</span></h3>
             <p>I'm a talented programmer, I'm a computer science student of the Federal University of Agriculture,
               Abeokuta. I build web application using HTML, CSS and JavaScript. I uses bootstrap for css and SCSS
@@ -28,13 +30,13 @@
           <div class="personalInfo">
             <div class="info">
               <div class="details">
-                <span class="row1">
+                <span class="row1 animate__animated animate__fadeInRight">
                   <span class="label">Birthday: </span><span class="content">21 Febraury 1999</span>
                   <span class="label">LinkIn: </span><span class="content"><a href="https://linkedIn.com/in/adebayo-azeez-ola">linkedIn.com/in/adebayo</a></span>
                   <span class="label">Degree: </span><span class="content">B.Sc computer science</span>
                   <span class="label">City: </span><span class="content">Lagos</span>
                 </span>
-                <span class="row2">
+                <span class="row2 animate__animated animate__fadeInRight">
                   <span class="label">Country: </span><span class="content">Nigeria</span>
                   <span class="label">Email: </span><span class="content">adebayoazeez37@yahoo.com</span>
                   <span class="label">Phone: </span><span class="content">08081602424</span>
@@ -42,35 +44,10 @@
                 </span>
               </div>
               <div class="buttons">
-                <button>Download CV</button><button>Hire me</button>
+                <button id="downloadCV">Download CV</button><button>Hire me</button>
               </div>
             </div>
-            <div class="progresses">
-              <div class="progress" id="html">
-                <span class="text"><span>HTML</span><span>90%</span></span><span class="bar">
-                  <hr>
-                  <hr class="bottom">
-                </span>
-              </div>
-              <div class="progress" id="css">
-                <span class="text"><span>CSS</span><span>85%</span></span><span class="bar">
-                  <hr>
-                  <hr class="bottom">
-                </span>
-              </div>
-              <div class="progress" id="JavaScript">
-                <span class="text"><span>JavaScript</span><span>80%</span></span><span class="bar">
-                  <hr>
-                  <hr class="bottom">
-                </span>
-              </div>
-              <div class="progress" id="git">
-                <span class="text"><span>GIT</span><span>50%</span></span><span class="bar">
-                  <hr>
-                  <hr class="bottom">
-                </span>
-              </div>
-            </div>
+
           </div>
           <div class="history">
             <div class="educations">
@@ -83,22 +60,22 @@
                   <div style="--p: 3;" class="bar"></div>
                   <div style="--p: 4;" class="bar"></div>
                 </div>
-                <div class="education repair">
+                <div class="education  animate__fadeInRight repair">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2013 - 2015</div>
                   <h3>Phones, Laptops, and electronics Repiar</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
                 </div>
-                <div class="education desktopPublishing">
+                <div class="education  animate__fadeInRight desktopPublishing">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2015 - 2017</div>
                   <h3>Microsoft packages and desktop Publishing</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
                 </div>
-                <div class="education computeScience">
+                <div class="education  animate__fadeInRight computeScience">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2018 - 2023</div>
                   <h3>Bachelor of science in computer science</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
                 </div>
-                <div class="education developer">
+                <div class="education  animate__fadeInRight developer">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2020 - TILL DATE</div>
                   <h3>Frontend web developer</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
@@ -117,33 +94,33 @@
               <hr id="bottom">
             </div>
             <div class="services">
-              <div class="service">
+              <div class="service animate__animated animate__pulse">
                 <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
                 <div class="title">Web Design</div>
                 <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
               </div>
-              <div class="service">
+              <div class="service animate__animated animate__pulse">
                 <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
 
                 <div class="title">Web Design</div>
                 <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
               </div>
-              <div class="service">
+              <div class="service animate__animated animate__pulse">
                 <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
                 <div class="title">Web Design</div>
                 <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
               </div>
-              <div class="service">
+              <div class="service animate__animated animate__pulse">
                 <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
                 <div class="title">Web Design</div>
                 <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
               </div>
-              <div class="service">
+              <div class="service animate__animated animate__pulse">
                 <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
                 <div class="title">Web Design</div>
                 <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
               </div>
-              <div class="service">
+              <div class="service animate__animated animate__pulse">
                 <div class="icon"><i><img src="/icons/services.png" alt="web design icon"></i></div>
                 <div class="title">Web Design</div>
                 <p>rem maxime voluptas iure architecto itaque delectus totam in, exercitationem reiciendis.</p>
@@ -267,6 +244,21 @@
                     recording of all students activities, including attendance,
                     result processing, student information, subjects and
                     performance and so on.
+                  </p>
+                </div>
+              </a>
+              <a href="https://store-sales.vercel.app/">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/store_sales.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A store sale</div>
+                  <p>
+                    A web app which can be used in a small scale store. The app helps the sales manager to have the record of all products including their price and the quantity. When each sale is made, the app helps to get the product, record the sale and generate an invoice.
                   </p>
                 </div>
               </a>
