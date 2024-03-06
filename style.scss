@@ -229,6 +229,9 @@ img {
     }
   }
 }
+.ui-dialog {
+  height: 90vh;
+}
 
 .mainContent.about {
   .textContent {
@@ -275,41 +278,7 @@ img {
       flex-flow: column;
     }
   }
-  .progress {
-    .text {
-      display: flex;
-      justify-content: space-between;
-    }
-    .bar {
-      position: relative;
-      width: 100%;
-      display: inline-block;
-      height: 5px;
 
-      hr {
-        position: absolute;
-        border: none;
-        height: 5px;
-        width: 100%;
-        background-color: gray;
-        border-radius: 2px;
-      }
-      .bottom {
-        background-color: $active;
-        width: 85%;
-      }
-    }
-
-    &#html .bottom {
-      width: 90%;
-    }
-    &#JavaScript .bottom {
-      width: 80%;
-    }
-    &#git .bottom {
-      width: 50%;
-    }
-  }
   .buttons {
     display: flex;
     // gap: 6em;
@@ -377,6 +346,41 @@ img {
 }
 
 .mainContent.servicePage {
+  .progress {
+    .text {
+      display: flex;
+      justify-content: space-between;
+    }
+    .bar {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      height: 5px;
+
+      hr {
+        position: absolute;
+        border: none;
+        height: 5px;
+        width: 100%;
+        background-color: gray;
+        border-radius: 2px;
+      }
+      .bottom {
+        background-color: $active;
+        width: 85%;
+      }
+    }
+
+    &#html .bottom {
+      width: 90%;
+    }
+    &#JavaScript .bottom {
+      width: 80%;
+    }
+    &#git .bottom {
+      width: 50%;
+    }
+  }
   p {
     line-height: unset;
   }
@@ -389,6 +393,9 @@ img {
       background-color: lighten($active, 15);
       padding: 1em;
       border-radius: 8px;
+    }
+    @media (max-width: $tab-breakpoint) {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
