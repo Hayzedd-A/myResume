@@ -46,21 +46,41 @@ a {
 img {
   width: 100%;
 }
-.menuIcon {
+section.navbar {
+  padding: 0.5em 2em;
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
   display: none;
   @media (max-width: $tabl-breakpoint) {
-    display: inline;
-    position: absolute;
-    left: 2em;
-    top: 2em;
+    display: flex;
+    position: fixed;
+    background: $dark-bgColor;
+    width: 100%;
+    z-index: 2;
+  }
+  .menuIcon {
     cursor: pointer;
-    &:hover {
-      svg path {
+    svg {
+      width: 32px;
+      height: 32px;
+      &:hover {
         fill: $active;
       }
     }
   }
+  .theme {
+    transition: 0.5s ease-in-out rotate;
+    transform-origin: center;
+    cursor: pointer;
+
+    svg {
+      fill: white;
+      width: 48px;
+    }
+  }
 }
+
 .closeIcon {
   display: none;
   width: 24px;
@@ -71,39 +91,6 @@ img {
   // &:hover
   @media (max-width: $tabl-breakpoint) {
     display: block;
-  }
-}
-
-.settings {
-  position: fixed;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  width: 6em;
-  height: 5em;
-  right: 0;
-
-  hr {
-    width: 4em;
-    height: 10px;
-    border: none;
-    background-color: rgb(201, 184, 184);
-    right: 1em;
-    border-radius: 3px;
-    position: fixed;
-  }
-  div {
-    position: absolute;
-    transition: 0.5s ease-in-out rotate;
-    transform-origin: center;
-    right: 1em;
-    border-radius: 50%;
-    // background-color: forestgreen;
-    height: 50%;
-    width: 40%;
-    svg {
-      fill: white;
-    }
   }
 }
 
@@ -346,41 +333,6 @@ img {
 }
 
 .mainContent.servicePage {
-  .progress {
-    .text {
-      display: flex;
-      justify-content: space-between;
-    }
-    .bar {
-      position: relative;
-      width: 100%;
-      display: inline-block;
-      height: 5px;
-
-      hr {
-        position: absolute;
-        border: none;
-        height: 5px;
-        width: 100%;
-        background-color: gray;
-        border-radius: 2px;
-      }
-      .bottom {
-        background-color: $active;
-        width: 85%;
-      }
-    }
-
-    &#html .bottom {
-      width: 90%;
-    }
-    &#JavaScript .bottom {
-      width: 80%;
-    }
-    &#git .bottom {
-      width: 50%;
-    }
-  }
   p {
     line-height: unset;
   }
@@ -389,17 +341,30 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 3em;
     .service {
+      display: grid;
+      gap: 1em;
+      .icon {
+        display: flex;
+        width: 100%;
+        gap: 1em;
+        align-items: center;
+      }
+      svg,
+      img {
+        width: 64px;
+        height: 64px;
+      }
       box-shadow: 1px 1px 1px 1px gray;
       background-color: lighten($active, 15);
       padding: 1em;
       border-radius: 8px;
     }
-    @media (max-width: $tab-breakpoint) {
+    @media (max-width: 880px) {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
-
-  .services {
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 .mainContent.portfolio {

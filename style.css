@@ -35,20 +35,39 @@ img {
   width: 100%;
 }
 
-.menuIcon {
+section.navbar {
+  padding: 0.5em 2em;
+  align-items: center;
+  justify-content: space-between;
   display: none;
 }
 @media (max-width: 1040px) {
-  .menuIcon {
-    display: inline;
-    position: absolute;
-    left: 2em;
-    top: 2em;
-    cursor: pointer;
+  section.navbar {
+    display: flex;
+    position: fixed;
+    background: rgb(32, 28, 28);
+    width: 100%;
+    z-index: 2;
   }
-  .menuIcon:hover svg path {
-    fill: rgb(255, 94, 0);
-  }
+}
+section.navbar .menuIcon {
+  cursor: pointer;
+}
+section.navbar .menuIcon svg {
+  width: 32px;
+  height: 32px;
+}
+section.navbar .menuIcon svg:hover {
+  fill: rgb(255, 94, 0);
+}
+section.navbar .theme {
+  transition: 0.5s ease-in-out rotate;
+  transform-origin: center;
+  cursor: pointer;
+}
+section.navbar .theme svg {
+  fill: white;
+  width: 48px;
 }
 
 .closeIcon {
@@ -63,37 +82,6 @@ img {
   .closeIcon {
     display: block;
   }
-}
-
-.settings {
-  position: fixed;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  width: 6em;
-  height: 5em;
-  right: 0;
-}
-.settings hr {
-  width: 4em;
-  height: 10px;
-  border: none;
-  background-color: rgb(201, 184, 184);
-  right: 1em;
-  border-radius: 3px;
-  position: fixed;
-}
-.settings div {
-  position: absolute;
-  transition: 0.5s ease-in-out rotate;
-  transform-origin: center;
-  right: 1em;
-  border-radius: 50%;
-  height: 50%;
-  width: 40%;
-}
-.settings div svg {
-  fill: white;
 }
 
 .mainContainer {
@@ -332,37 +320,6 @@ img {
   height: min-content;
 }
 
-.mainContent.servicePage .progress .text {
-  display: flex;
-  justify-content: space-between;
-}
-.mainContent.servicePage .progress .bar {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  height: 5px;
-}
-.mainContent.servicePage .progress .bar hr {
-  position: absolute;
-  border: none;
-  height: 5px;
-  width: 100%;
-  background-color: gray;
-  border-radius: 2px;
-}
-.mainContent.servicePage .progress .bar .bottom {
-  background-color: rgb(255, 94, 0);
-  width: 85%;
-}
-.mainContent.servicePage .progress#html .bottom {
-  width: 90%;
-}
-.mainContent.servicePage .progress#JavaScript .bottom {
-  width: 80%;
-}
-.mainContent.servicePage .progress#git .bottom {
-  width: 50%;
-}
 .mainContent.servicePage p {
   line-height: unset;
 }
@@ -372,16 +329,35 @@ img {
   gap: 3em;
 }
 .mainContent.servicePage .services .service {
+  display: grid;
+  gap: 1em;
   box-shadow: 1px 1px 1px 1px gray;
   background-color: #ff8e4d;
   padding: 1em;
   border-radius: 8px;
 }
-@media (max-width: 820px) {
+.mainContent.servicePage .services .service .icon {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  align-items: center;
+}
+.mainContent.servicePage .services .service svg,
+.mainContent.servicePage .services .service img {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 880px) {
   .mainContent.servicePage .services {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 600px) {
+  .mainContent.servicePage .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .mainContent.portfolio .services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
