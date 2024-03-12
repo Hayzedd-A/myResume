@@ -207,10 +207,6 @@ section.navbar .theme svg {
   width: 5em;
 }
 
-.ui-dialog {
-  height: 90vh;
-}
-
 .mainContent.about .textContent {
   display: grid;
   gap: 2em;
@@ -389,4 +385,51 @@ section.navbar .theme svg {
 }
 .mainContent.portfolio .service .icon {
   width: unset;
+}
+.mainContent.contact svg {
+  fill: rgb(255, 94, 0);
+  color: rgb(255, 94, 0);
+  width: 48px;
+  height: 48px;
+}
+.mainContent.contact .bodyContent,
+.mainContent.contact .textContent {
+  display: grid;
+  gap: 2em;
+}
+.mainContent.contact .bodyContent {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+.mainContent.contact .bodyContent .contactList {
+  display: flex;
+  gap: 1em;
+}
+.mainContent.contact .bodyContent .contactList .contact {
+  flex: 1;
+  display: grid;
+  gap: 0.5em;
+  border-radius: 1em;
+  padding: 1em;
+  transform-origin: left;
+  transform: translateY(0);
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+.mainContent.contact .bodyContent .contactList .contact:hover {
+  transform: translateY(-1em);
+  box-shadow: 2px 4px 8px 2px rgb(255, 94, 0);
+}
+.mainContent.contact .bodyContent .contactList .contact:active {
+  scale: 0.9;
+}
+.mainContent.contact .bodyContent .contactList .contact span:nth-child(3) {
+  font-size: 12px;
+}
+.mainContent.contact .bodyContent .contactList .contact span:nth-child(2) {
+  font-size: 1.5em;
+}
+.mainContent.contact section.emailMe {
+  display: grid;
 }

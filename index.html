@@ -189,13 +189,14 @@
             let page = this.response.split("---EndOfPage---")[pageNumber];
             $(".mainContentContainer").html(page);
             // Target element to observe
-            const animateElements =
-              document.querySelectorAll(".animate__animated");
-
-            // Start observing the target element
-            animateElements.forEach((element) => {
-              observer.observe(element);
-            });
+          };
+          xhr.onprogress = () => {
+            console.log("getting start");
+            $("#pageLoading").addClass("showAnimation");
+          };
+          xhr.loading = () => {
+            console.log("getting completed");
+            $("#pageLoading").removeClass("showAnimation");
           };
         }
 

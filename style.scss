@@ -216,9 +216,6 @@ section.navbar {
     }
   }
 }
-.ui-dialog {
-  height: 90vh;
-}
 
 .mainContent.about {
   .textContent {
@@ -399,5 +396,55 @@ section.navbar {
     }
   }
   @media (max-width: $tab-breakpoint) {
+  }
+}
+.mainContent.contact {
+  svg {
+    fill: $active;
+    color: $active;
+    width: 48px;
+    height: 48px;
+  }
+  .bodyContent,
+  .textContent {
+    display: grid;
+    gap: 2em;
+  }
+  .bodyContent {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    .contactList {
+      display: flex;
+      gap: 1em;
+      .contact {
+        flex: 1;
+        display: grid;
+        gap: 0.5em;
+        border-radius: 1em;
+        padding: 1em;
+        transform-origin: left;
+        transform: translateY(0);
+        transition: transform 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          transform: translateY(-1em);
+          box-shadow: 2px 4px 8px 2px $active;
+        }
+        &:active {
+          scale: 0.9;
+        }
+
+        span:nth-child(3) {
+          font-size: 12px;
+        }
+        span:nth-child(2) {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  section.emailMe {
+    display: grid;
   }
 }
