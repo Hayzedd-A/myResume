@@ -423,8 +423,12 @@ section.navbar {
         gap: 0.5em;
         border-radius: 1em;
         padding: 1em;
+        transform-origin: left;
+        transform: translateY(0);
+        transition: transform 0.2s linear;
         cursor: pointer;
         &:hover {
+          transform: translateY(-1em);
           box-shadow: 2px 4px 8px 2px $active;
         }
         &:active {

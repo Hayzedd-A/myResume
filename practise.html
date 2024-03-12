@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>generate content dynamically</title>
+<html>
+  <head>
+    <title>Google Maps Example</title>
     <style>
-        label {
-            display: block;
-            margin: 1em;
-        }
-        form {
-            margin-left: 50%;
-        }
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+      .mapContainer {
+        background-color: lightpink;
+      }
+      img {
+        width: 24px;
+      }
     </style>
-</head>
-<body>
-    <form action="">
-        <label for="email">email
-            <input type="email" id="email" class="mainForm" placeholder="eg  example@email.com">
-        </label>
-    </form>
-    <script src="jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <h1>Click on a Location to Show on Map</h1>
+    <div class="mapContainer">
+      <img src="/icons/close_icon.png" alt="" />
+      <div id="map"></div>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9F_eYQ5JFsMzsPLG0ksdHvh9W5Brytic&callback=initMap"
+      async
+      defer
+    ></script>
     <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 6.560154, lng: 3.332506 }, // Initial center
+          zoom: 8, // Initial zoom level
+        });
 
-        let formData = {
-            'password': ['password', 'password', 'at least of 8 characters long'],
-            'Full name': ['text', 'fullname', 'eg, John Doe']
-        }
+        // Example: Listen for a click event on a location
+        var marker = new google.maps.Marker({
+          position: { lat: 6.503154, lng: 3.226506 }, // New York City coordinates
+          map: map,
+        });
 
-        const element = $('label[for="email"]').clone()
-        const parent = $('form')
-        $.each(formData, function(name, value){
-            parent.append(element.attr('for', value[1]))
-            element = $('label[for="email"]').clone()
-            console.log($)
-        
-
-        })
-
+        google.maps.event.addListener(marker, "click", function () {
+          map.setCenter(marker.getPosition()); // Center the map on the clicked marker
+          map.setZoom(15); // Zoom in
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
