@@ -388,7 +388,7 @@ section.navbar .theme svg {
 }
 .mainContent.contact svg {
   fill: rgb(255, 94, 0);
-  color: rgb(255, 94, 0);
+  color: transparent;
   width: 48px;
   height: 48px;
 }
@@ -417,9 +417,17 @@ section.navbar .theme svg {
   transition: transform 0.2s linear;
   cursor: pointer;
 }
+.mainContent.contact .bodyContent .contactList .contact a {
+  flex: 1;
+  display: grid;
+  gap: 0.5em;
+}
 .mainContent.contact .bodyContent .contactList .contact:hover {
   transform: translateY(-1em);
   box-shadow: 2px 4px 8px 2px rgb(255, 94, 0);
+}
+.mainContent.contact .bodyContent .contactList .contact:hover svg {
+  fill: green;
 }
 .mainContent.contact .bodyContent .contactList .contact:active {
   scale: 0.9;
@@ -430,6 +438,57 @@ section.navbar .theme svg {
 .mainContent.contact .bodyContent .contactList .contact span:nth-child(2) {
   font-size: 1.5em;
 }
-.mainContent.contact section.emailMe {
-  display: grid;
+.mainContent.contact .popupContainer {
+  display: flex;
+  display: none;
+  justify-content: center;
 }
+.mainContent.contact .popupContainer section.emailMe {
+  width: 70%;
+  display: grid;
+  display: none;
+  background-color: #ffbf99;
+  padding: 1em;
+  border-radius: 1em;
+  gap: 1em;
+}
+.mainContent.contact .popupContainer section.emailMe form {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1em;
+}
+.mainContent.contact .popupContainer section.emailMe form label[for=senderSubject], .mainContent.contact .popupContainer section.emailMe form textarea {
+  grid-column: span 2;
+}
+.mainContent.contact .popupContainer section.emailMe form button {
+  padding: 8px 1em;
+  border: none;
+  border-radius: 8px;
+  grid-column: span 2;
+  width: 40%;
+  background-color: rgb(255, 94, 0);
+  font-size: 1.3em;
+  place-self: center;
+}
+.mainContent.contact .popupContainer section.emailMe form button:hover {
+  background-color: green;
+}
+.mainContent.contact .popupContainer section.emailMe form input {
+  width: 100%;
+}
+.mainContent.contact .popupContainer .mapContainer {
+  display: none;
+  position: relative;
+  border: 2px solid rgb(135, 52, 4);
+  background-color: rgb(146, 146, 146);
+  height: 75vh;
+}
+.mainContent.contact .popupContainer .mapContainer i {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  cursor: pointer;
+}
+.mainContent.contact .popupContainer .mapContainer i:hover svg {
+  fill: red;
+}/*# sourceMappingURL=style.css.map */

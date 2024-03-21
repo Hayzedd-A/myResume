@@ -401,7 +401,7 @@ section.navbar {
 .mainContent.contact {
   svg {
     fill: $active;
-    color: $active;
+    color: transparent;
     width: 48px;
     height: 48px;
   }
@@ -418,6 +418,11 @@ section.navbar {
       display: flex;
       gap: 1em;
       .contact {
+        a {
+          flex: 1;
+          display: grid;
+          gap: 0.5em;
+        }
         flex: 1;
         display: grid;
         gap: 0.5em;
@@ -430,6 +435,9 @@ section.navbar {
         &:hover {
           transform: translateY(-1em);
           box-shadow: 2px 4px 8px 2px $active;
+          svg {
+            fill: green;
+          }
         }
         &:active {
           scale: 0.9;
@@ -444,7 +452,64 @@ section.navbar {
       }
     }
   }
-  section.emailMe {
-    display: grid;
+  .popupContainer {
+    display: flex;
+    display: none;
+    justify-content: center;
+    section.emailMe {
+      width: 70%;
+      display: grid;
+      display: none;
+      background-color: #ffbf99;
+      padding: 1em;
+      border-radius: 1em;
+      gap: 1em;
+      form {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 1em;
+        label[for=senderSubject], textarea {
+          grid-column: span 2;
+        }
+        button {
+          padding: 8px 1em;
+          border: none;
+          border-radius: 8px;
+          // align-self: center;
+          grid-column: span 2;
+          width: 40%;
+          background-color: $active;
+          font-size: 1.3em;
+          place-self: center;
+          &:hover {
+            background-color: green;
+          }
+        }
+        input {
+          width: 100%;
+        }
+      }
+    }
+    
+    .mapContainer {
+      display: none;
+      position: relative;
+      border: 2px solid $activeSec;
+      background-color: rgb(146, 146, 146);
+      height: 75vh;
+      i {
+        position: absolute;
+        right: 1em;
+        top: 0.5em;
+        cursor: pointer;
+        &:hover {
+          svg {
+            fill: red;
+          }
+        }
+      }
+      #map {
+      }
+    }
   }
 }
