@@ -41,6 +41,7 @@
       </div>
       <div class="mainContentContainer">
         <div class="mainContent contact">
+          <div class="status">Email sent successfully</div>
           <div class="textContent">
             <div class="heading">
               <h1>Contact me</h1>
@@ -196,7 +197,11 @@
                 <div class="emailBody">
                   <form action="/">
                     <label for="name">
-                      <input type="text" id="name" placeholder="Your name" />
+                      <input
+                        type="text"
+                        id="senderName"
+                        placeholder="Your name"
+                      />
                     </label>
                     <label for="senderEmail">
                       <input
@@ -233,6 +238,10 @@
       </div>
     </div>
     <script src="jquery-3.6.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9F_eYQ5JFsMzsPLG0ksdHvh9W5Brytic"
       async
@@ -281,14 +290,6 @@
           );
           darkBG = true;
         }
-        // $('body').css({
-        //     'background-color': $('body').css('backgroundColor') == 'rgb(32, 28, 28)' ? 'rgb(255, 255, 255)' : 'rgb(32, 28, 28)',
-        //     'color': $('body').css('color') == 'rgb(32, 28, 28)' ? 'rgb(255, 255, 255)' : 'rgb(32, 28, 28)'
-        // })
-        // $('.sideMenu, .educations.content').css({
-        //     'background-color': $('.sideMenu').css('backgroundColor') == 'rgb(114, 99, 99)' ? 'rgb(178, 163, 163)' : 'rgb(114, 99, 99)',
-
-        // })
       });
 
       $(".menu li").click(function () {
@@ -324,6 +325,69 @@
         $(".popupContainer, .mapContainer, .emailMe, #map").hide();
         $(".popupContainer").css("display", "flex");
         $(".emailMe").css("display", "grid");
+      });
+
+      (function () {
+        emailjs.init("m7LyBc2cmZpjNjRTc");
+      })();
+
+      let statusEl = $(".status");
+      let callback = (status, message = "Email sent successfully") => {
+        statusEl.text(message);
+        console.log(status);
+        if (status.status !== 200) {
+          console.log("error");
+          statusEl.css({
+            top: "2em",
+            borderColor: "red",
+            backgroundColor: "rgb(250, 186, 186)",
+          });
+        } else {
+          statusEl.css({
+            top: "2em",
+            borderColor: "rgb(5, 85, 5)",
+            backgroundColor: "rgb(129, 201, 129)",
+          });
+          // $(".mailContent").val("");
+          console.log("success");
+        }
+        setTimeout(function () {
+          statusEl.css({ top: "-2.5em" });
+        }, 3000);
+      };
+
+      $(".mainContentContainer").on("click", "form button", function () {
+        // $("form").onSubmit(function (e) {
+        // e.preventDefault();
+        // });
+        // const animation = lottie.loadAnimation({
+        //   container: $(".animation"),
+        //   renderer: "svg",
+        //   loop: true,
+        //   autoplay: true,
+        //   path: "animation_lm06rzcf.json",
+        // });
+
+        console.log("submitting");
+        // return false;
+
+        let mailerName = $("#senderName").val();
+        let mailerEmail = $("#senderEmail").val();
+        let mailSubject = $("#senderSubject").val();
+        let mailBody = $("#emailBody").val();
+
+        var emailContent = {
+          from_name: mailerName,
+          to_name: mailerEmail,
+          message: mailSubject + "\n" + mailBody,
+        };
+        emailjs
+          .send("service_yax7r57", "template_e2i17pb", emailContent)
+          .then(callback, function (Error) {
+            callback(Error, "There was an error sending the message");
+          });
+
+        return false;
       });
     </script>
   </body>

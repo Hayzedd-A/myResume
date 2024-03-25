@@ -399,6 +399,19 @@ section.navbar {
   }
 }
 .mainContent.contact {
+  .status {
+    border: 2px solid rgb(5, 85, 5);
+    width: max-content;
+    padding: 0.5em 2em;
+    border-radius: 8px;
+    background-color: rgb(129, 201, 129);
+    color: rgb(24, 38, 24);
+    position: absolute;
+    translate: 50%;
+    right: 50%;
+    top: -2.5em;
+    transition: top linear 500ms;
+  }
   svg {
     fill: $active;
     color: transparent;
