@@ -438,29 +438,43 @@ section.navbar .theme svg {
 .mainContent.contact .bodyContent .contactList .contact span:nth-child(2) {
   font-size: 1.5em;
 }
-.mainContent.contact .popupContainer {
-  display: flex;
-  display: none;
+.mainContent.contact section.popup {
+  display: grid;
   justify-content: center;
 }
-.mainContent.contact .popupContainer section.emailMe {
-  width: 70%;
-  display: grid;
+.mainContent.contact section.popup .popupContainer {
+  position: relative;
   display: none;
-  background-color: #ffbf99;
+}
+.mainContent.contact section.popup .popupContainer i {
+  position: absolute;
+  right: 4em;
+  top: 0.5em;
+  z-index: 1;
+  cursor: pointer;
+}
+.mainContent.contact section.popup .popupContainer i:hover svg {
+  fill: red;
+}
+.mainContent.contact section.popup .popupContainer section.emailMe {
+  display: none;
+  background-color: rgb(32, 28, 28);
+  box-shadow: 3px 2px 5px 5px rgb(255, 94, 0);
   padding: 1em;
   border-radius: 1em;
   gap: 1em;
 }
-.mainContent.contact .popupContainer section.emailMe form {
+.mainContent.contact section.popup .popupContainer section.emailMe form {
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 1em;
 }
-.mainContent.contact .popupContainer section.emailMe form label[for=senderSubject], .mainContent.contact .popupContainer section.emailMe form textarea {
+.mainContent.contact section.popup .popupContainer section.emailMe form label[for=senderSubject],
+.mainContent.contact section.popup .popupContainer section.emailMe form textarea {
   grid-column: span 2;
+  font-size: 1.1em;
 }
-.mainContent.contact .popupContainer section.emailMe form button {
+.mainContent.contact section.popup .popupContainer section.emailMe form button {
   padding: 8px 1em;
   border: none;
   border-radius: 8px;
@@ -470,25 +484,24 @@ section.navbar .theme svg {
   font-size: 1.3em;
   place-self: center;
 }
-.mainContent.contact .popupContainer section.emailMe form button:hover {
+.mainContent.contact section.popup .popupContainer section.emailMe form button:hover {
   background-color: green;
 }
-.mainContent.contact .popupContainer section.emailMe form input {
+.mainContent.contact section.popup .popupContainer section.emailMe form input {
   width: 100%;
+  padding: 8px 16px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: none;
 }
-.mainContent.contact .popupContainer .mapContainer {
+.mainContent.contact section.popup .popupContainer .mapContainer {
   display: none;
   position: relative;
   border: 2px solid rgb(135, 52, 4);
   background-color: rgb(146, 146, 146);
   height: 75vh;
 }
-.mainContent.contact .popupContainer .mapContainer i {
-  position: absolute;
-  right: 1em;
-  top: 0.5em;
-  cursor: pointer;
-}
-.mainContent.contact .popupContainer .mapContainer i:hover svg {
-  fill: red;
+.mainContent.contact section.popup .popupContainer .mapContainer #map {
+  width: 75vw;
+  height: 80vh;
 }/*# sourceMappingURL=style.css.map */

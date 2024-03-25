@@ -452,55 +452,17 @@ section.navbar {
       }
     }
   }
-  .popupContainer {
-    display: flex;
-    display: none;
+  section.popup {
+    display: grid;
     justify-content: center;
-    section.emailMe {
-      width: 70%;
-      display: grid;
-      display: none;
-      background-color: #ffbf99;
-      padding: 1em;
-      border-radius: 1em;
-      gap: 1em;
-      form {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        gap: 1em;
-        label[for=senderSubject], textarea {
-          grid-column: span 2;
-        }
-        button {
-          padding: 8px 1em;
-          border: none;
-          border-radius: 8px;
-          // align-self: center;
-          grid-column: span 2;
-          width: 40%;
-          background-color: $active;
-          font-size: 1.3em;
-          place-self: center;
-          &:hover {
-            background-color: green;
-          }
-        }
-        input {
-          width: 100%;
-        }
-      }
-    }
-    
-    .mapContainer {
-      display: none;
+    .popupContainer {
       position: relative;
-      border: 2px solid $activeSec;
-      background-color: rgb(146, 146, 146);
-      height: 75vh;
+      display: none;
       i {
         position: absolute;
-        right: 1em;
+        right: 4em;
         top: 0.5em;
+        z-index: 1;
         cursor: pointer;
         &:hover {
           svg {
@@ -508,7 +470,57 @@ section.navbar {
           }
         }
       }
-      #map {
+      section.emailMe {
+        display: none;
+        background-color: $dark-bgColor;
+        box-shadow: 3px 2px 5px 5px $active;
+        padding: 1em;
+        border-radius: 1em;
+        gap: 1em;
+        form {
+          display: grid;
+          grid-template-columns: 2fr 3fr;
+          gap: 1em;
+          label[for="senderSubject"],
+          textarea {
+            grid-column: span 2;
+            font-size: 1.1em;
+          }
+          button {
+            padding: 8px 1em;
+            border: none;
+            border-radius: 8px;
+            // align-self: center;
+            grid-column: span 2;
+            width: 40%;
+            background-color: $active;
+            font-size: 1.3em;
+            place-self: center;
+            &:hover {
+              background-color: green;
+            }
+          }
+          input {
+            width: 100%;
+            padding: 8px 16px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+          }
+        }
+      }
+
+      .mapContainer {
+        display: none;
+        position: relative;
+        border: 2px solid $activeSec;
+        background-color: rgb(146, 146, 146);
+        height: 75vh;
+
+        #map {
+          width: 75vw;
+          height: 80vh;
+        }
       }
     }
   }

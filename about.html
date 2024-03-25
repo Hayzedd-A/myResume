@@ -168,57 +168,67 @@
                   >
                 </div>
               </div>
-              
             </div>
           </div>
-          <div class="popupContainer">
-            <i
-              ><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-              <svg
-                height="512px"
-                id="Layer_1"
-                style="enable-background: new 0 0 512 512"
-                version="1.1"
-                viewBox="0 0 512 512"
-                width="512px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <path
-                  d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
-                />
-              </svg>
-            </i>
-            <section class="emailMe" >
-              <h2>SEND ME AN EMAIL</h2>
-              <h4>I respond to email fast</h4>
-              <div class="emailBody">
-                <form action="/">
-                  <label for="name">
-                    <input type="text" id="name" placeholder="Your name"/>
-                  </label>
-                  <label for="senderEmail">
-                    <input type="text" id="senderEmail" placeholder="Your email"/>
-                  </label>
-                  <label for="senderSubject">
-                    <input type="text" id="senderSubject" placeholder="Email subject"/>
-                  </label>
-                  <textarea placeholder="Email body"
-                    name="emailBody"
-                    id="emailBody"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                  <button>Send</button>
-                </form>
+          <section class="popup">
+            <div class="popupContainer">
+              <i
+                ><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  style="enable-background: new 0 0 512 512"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
+                  />
+                </svg>
+              </i>
+              <section class="emailMe">
+                <h2>SEND ME AN EMAIL</h2>
+                <h4>I respond to email fast</h4>
+                <div class="emailBody">
+                  <form action="/">
+                    <label for="name">
+                      <input type="text" id="name" placeholder="Your name" />
+                    </label>
+                    <label for="senderEmail">
+                      <input
+                        type="text"
+                        id="senderEmail"
+                        placeholder="Your email"
+                      />
+                    </label>
+                    <label for="senderSubject">
+                      <input
+                        type="text"
+                        id="senderSubject"
+                        placeholder="Email subject"
+                      />
+                    </label>
+                    <textarea
+                      placeholder="Email body"
+                      name="emailBody"
+                      id="emailBody"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <button>Send</button>
+                  </form>
+                </div>
+              </section>
+
+              <div class="mapContainer">
+                <div id="map"></div>
               </div>
-            </section>
-            
-            <div class="mapContainer">
-            <div id="map"></div>
-          </div>
-        </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -300,20 +310,21 @@
 
         getFile("pages.txt");
       });
-      $(".location").click(function () {
-        $(".popupContainer").show();
+      $(".mainContentContainer").on("click", ".location", function () {
+        $(".popupContainer, .mapContainer, .emailMe").hide();
+        $(".popupContainer, .mapContainer, #map ").show();
         initMap();
       });
-      $('.popupContainer i').click(function() {
-        $('.popupContainer').hide()
-      })
 
-      $('.email').click(function() {
-        $('.popupContainer').css('display', 'flex')
-        $('.emailMe').css('display', 'grid')
-      })
+      $(".mainContentContainer").on("click", ".popupContainer i", function () {
+        $(".popupContainer, .mapContainer, .emailMe, #map").hide();
+      });
 
-
+      $(".mainContentContainer").on("click", ".email", function () {
+        $(".popupContainer, .mapContainer, .emailMe, #map").hide();
+        $(".popupContainer").css("display", "flex");
+        $(".emailMe").css("display", "grid");
+      });
     </script>
   </body>
 </html>
