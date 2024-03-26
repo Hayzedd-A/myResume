@@ -386,20 +386,6 @@ section.navbar .theme svg {
 .mainContent.portfolio .service .icon {
   width: unset;
 }
-.mainContent.contact .status {
-  border: 2px solid rgb(5, 85, 5);
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0.5em 2em;
-  border-radius: 8px;
-  background-color: rgb(129, 201, 129);
-  color: rgb(24, 38, 24);
-  position: absolute;
-  translate: 50%;
-  right: 50%;
-  top: -2.5em;
-  transition: top linear 500ms;
-}
 .mainContent.contact svg {
   fill: rgb(255, 94, 0);
   color: transparent;
@@ -455,6 +441,22 @@ section.navbar .theme svg {
 .mainContent.contact section.popup {
   display: grid;
   justify-content: center;
+  position: relative;
+}
+.mainContent.contact section.popup .status {
+  display: none;
+  border: 2px solid rgb(5, 85, 5);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5em 2em;
+  border-radius: 8px;
+  background-color: rgb(129, 201, 129);
+  color: rgb(24, 38, 24);
+  position: absolute;
+  translate: 50%;
+  right: 50%;
+  top: -2.5em;
+  transition: top linear 500ms;
 }
 .mainContent.contact section.popup .popupContainer {
   position: relative;

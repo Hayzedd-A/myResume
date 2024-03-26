@@ -854,7 +854,8 @@
             </div>
           </div>
         </div>
----EndOfPage---<div class="mainContent portfolio">
+---EndOfPage---
+        <div class="mainContent portfolio">
           <div class="textContent">
             <div class="heading">
               <h1>Portfolio</h1>
@@ -862,7 +863,10 @@
               <hr id="bottom" />
             </div>
             <div class="services">
-              <a href="https://my-resume-git-master-hayzedd-a.vercel.app/" target="_blank">
+              <a
+                href="https://my-resume-git-master-hayzedd-a.vercel.app/"
+                target="_blank"
+              >
                 <div class="service">
                   <div class="icon">
                     <i
@@ -876,30 +880,49 @@
                   <p>
                     A responsive resume website to know about me. Created with
                     HTML, SCSS and JQuery. Uses an XMLHttpRequest to get the
-                    content of each page from an txt file. Designed in both dark
+                    content of each page from a txt file. Designed in both dark
                     and light theme.
                   </p>
                 </div>
               </a>
-              <a href="https://frontend-mentor-three-nu.vercel.app/" target="_blank">
+              <a href="https://school-app-ebon.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
                     <i
                       ><img
-                        src="/icons/projects/frontendMentor.png"
+                        src="/icons/projects/schoolApp.png"
                         alt="web design icon"
-                        loading="lazy"
                     /></i>
                   </div>
-
-                  <div class="title">Frontend Mentor challenge</div>
+                  <div class="title">A school App</div>
                   <p>
-                    A responsive page of the frontend mentor challange-2.
-                    Created with HTML and SCSS, using grid for the layout and
-                    media query for the resposivness
+                    A web app which can be used in a secondary school for
+                    recording of all students activities, including attendance,
+                    result processing, student information, subject performance
+                    and so on.
                   </p>
                 </div>
               </a>
+              <a href="https://store-sales.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/store_sales.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A store sale</div>
+                  <p>
+                    A web app which can be used in a small scale store. The app
+                    helps the sales manager to have the record of all products
+                    including their price and the quantity. When each sale is
+                    made, the app helps to get the product, record the sale and
+                    generate an invoice.
+                  </p>
+                </div>
+              </a>
+
               <a href="https://machine-modeling.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
@@ -954,43 +977,70 @@
                   </p>
                 </div>
               </a>
-              <a href="https://school-app-ebon.vercel.app/" target="_blank">
+              <a href="https://d-dhub.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
                     <i
                       ><img
-                        src="/icons/projects/schoolApp.png"
+                        src="/icons/projects/d-dhub.png"
                         alt="web design icon"
+                        loading="lazy"
                     /></i>
                   </div>
-                  <div class="title">A school App</div>
+
+                  <div class="title">Sample pricing page</div>
+                  <p>A responsive pricing page of a website.</p>
+                </div>
+              </a>
+              <a
+                href="https://frontend-mentor-newsletter-mauve.vercel.app/"
+                target="_blank"
+              >
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/newsletter.png"
+                        alt="web design icon"
+                        loading="lazy"
+                    /></i>
+                  </div>
+
+                  <div class="title">Frontend Mentor newsletter challenge</div>
                   <p>
-                    A web app which can be used in a secondary school for
-                    recording of all students activities, including attendance,
-                    result processing, student information, subjects and
-                    performance and so on.
+                    A responsive page of the frontend mentor newsletter. Created
+                    with HTML and SCSS, using grid for the layout, media query
+                    for the resposivness, jquery for the click event.
                   </p>
                 </div>
               </a>
-              <a href="https://store-sales.vercel.app/" target="_blank">
+              <a
+                href="https://frontend-mentor-three-nu.vercel.app/"
+                target="_blank"
+              >
                 <div class="service">
                   <div class="icon">
                     <i
                       ><img
-                        src="/icons/projects/store_sales.png"
+                        src="/icons/projects/frontendMentor.png"
                         alt="web design icon"
+                        loading="lazy"
                     /></i>
                   </div>
-                  <div class="title">A store sale</div>
+
+                  <div class="title">Frontend Mentor challenge</div>
                   <p>
-                    A web app which can be used in a small scale store. The app helps the sales manager to have the record of all products including their price and the quantity. When each sale is made, the app helps to get the product, record the sale and generate an invoice.
+                    A responsive page of the frontend mentor challange-2.
+                    Created with HTML and SCSS, using grid for the layout and
+                    media query for the resposivness
                   </p>
                 </div>
               </a>
             </div>
           </div>
         </div>
----EndOfPage---        <div class="mainContent contact">
+---EndOfPage---        
+        <div class="mainContent contact">
           <div class="textContent">
             <div class="heading">
               <h1>Contact me</h1>
@@ -1121,6 +1171,7 @@
             </div>
           </div>
           <section class="popup">
+          <div class="status">Email sent successfully</div>
             <div class="popupContainer">
               <i
                 ><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -1146,7 +1197,11 @@
                 <div class="emailBody">
                   <form action="/">
                     <label for="name">
-                      <input type="text" id="name" placeholder="Your name" />
+                      <input
+                        type="text"
+                        id="senderName"
+                        placeholder="Your name"
+                      />
                     </label>
                     <label for="senderEmail">
                       <input
@@ -1179,4 +1234,4 @@
               </div>
             </div>
           </section>
-        </div>  
+        </div>

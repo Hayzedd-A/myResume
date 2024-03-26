@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+
+    <script src="./library/pdfobject.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>My Resume</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="menuIcon">
+        <svg
+          class="feather feather-menu"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="3" x2="21" y1="12" y2="12" />
+          <line x1="3" x2="21" y1="6" y2="6" />
+          <line x1="3" x2="21" y1="18" y2="18" />
+        </svg>
+      </div>
+      <div class="theme" id="themeSwitch">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.21,15.32A8.56,8.56,0,1,1,11.29,3.5a.5.5,0,0,1,.51.28.49.49,0,0,1-.09.57A6.46,6.46,0,0,0,9.8,9a6.57,6.57,0,0,0,9.71,5.72.52.52,0,0,1,.58.07A.52.52,0,0,1,20.21,15.32Z"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <div class="mainContainer">
+      <div class="sideMenu">
+        <div class="nameLogo animate__animated animate__fadeInRight">
+          <h1>AZEEZ</h1>
+        </div>
+        <div class="closeIcon">
+          <img src="icons/close_icon.png" alt="" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li class="home animate__animated animate__fadeInLeft active">
+              <i><img src="icons/home.png" alt="home icon" /></i>Home
+            </li>
+            <li class="about animate__animated animate__fadeInLeft">
+              <i><img src="icons/account.png" alt="about icon" /></i>About
+            </li>
+            <li class="services animate__animated animate__fadeInLeft">
+              <i><img src="icons/services.png" alt="services icon" /></i>Skill
+            </li>
+            <li class="portfolio animate__animated animate__fadeInLeft">
+              <i><img src="icons/portfolio.png" alt="portfolio icon" /></i
+              >Portfolio
+            </li>
+            <li class="contact animate__animated animate__fadeInLeft">
+              <i><img src="icons/contact.png" alt="contact icon" /></i>Contact
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mainContentContainer">
+        <div class="mainContent portfolio">
+          <div class="textContent">
+            <div class="heading">
+              <h1>Portfolio</h1>
+              <hr id="top" />
+              <hr id="bottom" />
+            </div>
+            <div class="services">
+              <a
+                href="https://my-resume-git-master-hayzedd-a.vercel.app/"
+                target="_blank"
+              >
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/resume.png"
+                        loading="lazy"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">My Resume</div>
+                  <p>
+                    A responsive resume website to know about me. Created with
+                    HTML, SCSS and JQuery. Uses an XMLHttpRequest to get the
+                    content of each page from a txt file. Designed in both dark
+                    and light theme.
+                  </p>
+                </div>
+              </a>
+              <a href="https://school-app-ebon.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/schoolApp.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A school App</div>
+                  <p>
+                    A web app which can be used in a secondary school for
+                    recording of all students activities, including attendance,
+                    result processing, student information, subject performance
+                    and so on.
+                  </p>
+                </div>
+              </a>
+              <a href="https://store-sales.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/store_sales.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A store sale</div>
+                  <p>
+                    A web app which can be used in a small scale store. The app
+                    helps the sales manager to have the record of all products
+                    including their price and the quantity. When each sale is
+                    made, the app helps to get the product, record the sale and
+                    generate an invoice.
+                  </p>
+                </div>
+              </a>
+
+              <a href="https://machine-modeling.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/imageModeling.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">An fruit image identifier</div>
+                  <p>
+                    A capstone project to identify an apple, kiwi, apricot and
+                    orange. Uses a image file picker for image uploading, uses
+                    an async function to submit as a form to an API and then
+                    render the result.
+                  </p>
+                </div>
+              </a>
+              <a href="https://adebayoazeez37-gl98.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/belab.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">Simple Landing page</div>
+                  <p>
+                    A simple responsive landing page for an interior designer.
+                  </p>
+                </div>
+              </a>
+              <a href="https://calendar-puce.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/calendar.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A calender and To-do app</div>
+                  <p>
+                    A one page app that dynamically displays the calendar using
+                    HTML CSS and JQuery. The date of each year is generated by
+                    calculation. The todo are saved in the local storage of the
+                    browser making it still available after refresh or even
+                    after a long time. <br />Other features includes accordion,
+                    tooltip, current date sign, todo date interval and some
+                    others.
+                  </p>
+                </div>
+              </a>
+              <a href="https://d-dhub.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/d-dhub.png"
+                        alt="web design icon"
+                        loading="lazy"
+                    /></i>
+                  </div>
+
+                  <div class="title">Sample pricing page</div>
+                  <p>A responsive pricing page of a website.</p>
+                </div>
+              </a>
+              <a
+                href="https://frontend-mentor-newsletter-mauve.vercel.app/"
+                target="_blank"
+              >
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/newsletter.png"
+                        alt="web design icon"
+                        loading="lazy"
+                    /></i>
+                  </div>
+
+                  <div class="title">Frontend Mentor newsletter challenge</div>
+                  <p>
+                    A responsive page of the frontend mentor newsletter. Created
+                    with HTML and SCSS, using grid for the layout, media query
+                    for the resposivness, jquery for the click event.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://frontend-mentor-three-nu.vercel.app/"
+                target="_blank"
+              >
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/frontendMentor.png"
+                        alt="web design icon"
+                        loading="lazy"
+                    /></i>
+                  </div>
+
+                  <div class="title">Frontend Mentor challenge</div>
+                  <p>
+                    A responsive page of the frontend mentor challange-2.
+                    Created with HTML and SCSS, using grid for the layout and
+                    media query for the resposivness
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="./library/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="./library/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9F_eYQ5JFsMzsPLG0ksdHvh9W5Brytic"
+      async
+      defer
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
