@@ -63,22 +63,22 @@
                 <div class="education  animate__fadeInRight repair">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2013 - 2015</div>
                   <h3>Phones, Laptops, and electronics Repiar</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                  <p> Demonstrated expertise in designing and troubleshooting electronic devices, ensuring peak performance for phones, laptops, and various electronics through meticulous hardware and software analysis.</p>
                 </div>
                 <div class="education  animate__fadeInRight desktopPublishing">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2015 - 2017</div>
                   <h3>Microsoft packages and desktop Publishing</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                  <p>Exhibited proficiency in desktop publishing, utilizing advanced skills in Microsoft packages to create polished and professional documents, showcasing meticulous attention to detail.</p>
                 </div>
                 <div class="education  animate__fadeInRight computeScience">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2018 - 2023</div>
                   <h3>Bachelor of science in computer science</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                  <p> Attained a Bachelor of Science in Computer Science, acquiring an advanced understanding of programming languages, algorithms, and computer systems, demonstrating a strong foundation in the field.</p>
                 </div>
                 <div class="education  animate__fadeInRight developer">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2020 - TILL DATE</div>
                   <h3>Frontend web developer</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae dignissimos, odit labore voluptatibus iste libero. Velit, provident iure ea id sapiente tempore beatae doloremque. Maxime, dignissimos! Praesentium, fuga porro.</p>
+                  <p>Expert in frontend web development, crafting dynamic and user-friendly websites using HTML, CSS, and JavaScript, implementing responsive design techniques for optimal user experience.</p>
                 </div>
               </div>
             </div>

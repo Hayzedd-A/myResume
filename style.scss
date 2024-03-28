@@ -417,6 +417,9 @@ section.navbar {
     .contactList {
       display: flex;
       gap: 1em;
+      @media (max-width: $tab-breakpoint) {
+        display: grid;
+      }
       .contact {
         a {
           flex: 1;
