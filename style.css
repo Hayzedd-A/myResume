@@ -508,6 +508,10 @@ section.navbar .theme svg {
 .mainContent.contact section.popup .popupContainer section.emailMe form button:hover {
   background-color: green;
 }
+.mainContent.contact section.popup .popupContainer section.emailMe form button img {
+  width: 48px;
+  height: 48px;
+}
 .mainContent.contact section.popup .popupContainer section.emailMe form input {
   width: 100%;
   padding: 8px 16px;

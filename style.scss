@@ -517,6 +517,10 @@ section.navbar {
             &:hover {
               background-color: green;
             }
+            img {
+              width: 48px;
+              height: 48px;
+            }
           }
           input {
             width: 100%;

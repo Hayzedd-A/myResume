@@ -175,7 +175,11 @@ $(".mainContentContainer").on("click", "form button", function () {
   //   path: "animation_lm06rzcf.json",
   // });
 
-  console.log("submitting");
+  console.log("submitting", $(this));
+
+  $(this).text('Sending...')
+  $(this).css({'textDecoration': 'italics'})
+  $(this).attr('disabled', true)
   // return false;
 
   let mailerName = $("#senderName").val();
