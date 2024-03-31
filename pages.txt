@@ -135,8 +135,7 @@
                 </div>
 
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Proficient in crafting semantic and accessible HTML markup, adept at structuring web content for optimal user experience and search engine visibility.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -179,8 +178,7 @@
                   <div class="title">CSS 3</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Skilled in using CSS to style and layout web pages, proficient in modern CSS techniques including flexbox and grid for creating responsive designs.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -222,8 +220,7 @@
                   <div class="title">JavaScript</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Experienced in JavaScript programming, capable of building interactive and dynamic web applications, proficient in modern ES6+ features and libraries like Axios and Moment.js.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -385,8 +382,7 @@
                   <div class="title">JQuery</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Familiar with jQuery library for DOM manipulation and event handling, capable of efficiently enhancing user interfaces and simplifying JavaScript code.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -408,8 +404,7 @@
                   <div class="title">React</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Proficient in developing web applications with React.js, skilled in building reusable UI components, managing state effectively, and utilizing React ecosystem tools like Redux and React Router.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -452,8 +447,7 @@
                   <div class="title">Python</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Skilled Python developer, proficient in writing clean and efficient code, experienced in various Python libraries and frameworks for web development, data analysis, and automation.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -462,8 +456,7 @@
                   <div class="title">Flask</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Experienced in backend development with Flask, capable of building RESTful APIs and web applications, proficient in routing, request handling, and integrating Flask with databases.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -486,8 +479,7 @@
                   <div class="title">Django</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Experienced in Django web framework, proficient in building robust and scalable web applications, skilled in Django ORM, authentication, and class-based views.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -547,8 +539,7 @@
                   <div class="title">MySQL</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Proficient in MySQL database management, skilled in designing and optimizing relational database schemas, writing complex SQL queries, and performing database administration tasks.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -645,8 +636,7 @@
                   <div class="title">Git</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Proficient in version control with Git, experienced in using Git for collaborative software development, skilled in branching, merging, and resolving conflicts.
                 </p>
               </div>
               <div class="service animate__animated animate__pulse">
@@ -847,8 +837,7 @@
                   <div class="title">Linux</div>
                 </div>
                 <p>
-                  rem maxime voluptas iure architecto itaque delectus totam in,
-                  exercitationem reiciendis.
+                  Familiar with Linux operating system, proficient in command-line interface, shell scripting, and system administration tasks, experienced in deploying and managing web servers on Linux platforms.
                 </p>
               </div>
             </div>
