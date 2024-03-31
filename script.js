@@ -143,58 +143,50 @@ let callback = (status, message = "Email sent successfully") => {
   console.log(status);
   if (status.status !== 200) {
     console.log("error");
-    buttonEL.css({
-      top: "2em",
-      borderColor: "red",
-      backgroundColor: "rgb(250, 186, 186)",
-    });
+    buttonEL.addClass("error");
   } else {
-    buttonEL.css({
-      top: "2em",
-      display: "block",
-      borderColor: "rgb(5, 85, 5)",
-      backgroundColor: "rgb(129, 201, 129)",
-    });
-    // $(".mailContent").val("");
     console.log("success");
+    buttonEL.addClass("success");
+    $("#senderName").val("");
+    $("#senderEmail").val("");
+    $("#senderSubject").val("");
+    $("#emailBody").val("");
   }
   setTimeout(function () {
-    buttonEL.text("Send");
-    buttonEL.css({});
+    buttonEL.text("Send").attr("disabled", false);
+    buttonEL.removeClass("success error");
+    buttonEL.addClass("active");
   }, 3000);
 };
 
 $(".mainContentContainer").on("click", "form button", function () {
-  // $("form").onSubmit(function (e) {
-  // e.preventDefault();
-  // });
-  // const animation = lottie.loadAnimation({
-  //   container: $(".animation"),
-  //   renderer: "svg",
-  //   loop: true,
-  //   autoplay: true,
-  //   path: "animation_lm06rzcf.json",
-  // });
+  let mailerName = $("#senderName");
+  let mailerEmail = $("#senderEmail");
+  let mailSubject = $("#senderSubject");
+  let mailBody = $("#emailBody");
 
-  console.log("submitting", $(this));
+  if (
+    mailerName.val() == "" ||
+    mailerEmail.val() == "" ||
+    mailSubject.val() == "" ||
+    mailBody.val() == ""
+  ) {
+    alert("Please fill all the fields");
+    return false;
+  }
 
   $(this).text("Sending...");
-  $(this).css({ textDecoration: "italics" });
+  $(this).css("textDecoration", "italics");
   $(this).attr("disabled", true);
-  // return false;
-
-  let mailerName = $("#senderName").val();
-  let mailerEmail = $("#senderEmail").val();
-  let mailSubject = $("#senderSubject").val();
-  let mailBody = $("#emailBody").val();
+  $(this).removeClass("active");
 
   var emailContent = {
-    from_name: mailerName,
-    to_name: mailerEmail,
-    message: mailSubject + "\n" + mailBody,
+    from_name: mailerName.val(),
+    to_name: mailerEmail.val(),
+    message: mailSubject.val() + "\n" + mailBody.val(),
   };
   emailjs
-    .send("wservice_yax7r57", "template_e2i17pb", emailContent)
+    .send("service_yax7r57", "template_e2i17pb", emailContent)
     .then(callback, function (Error) {
       callback(Error, "There was an error sending the message");
     });

@@ -41,7 +41,6 @@
       </div>
       <div class="mainContentContainer">
         <div class="mainContent contact">
-          <div class="status">Email sent successfully</div>
           <div class="textContent">
             <div class="heading">
               <h1>Contact me</h1>
@@ -201,20 +200,23 @@
                         type="text"
                         id="senderName"
                         placeholder="Your name"
+                        required
                       />
                     </label>
                     <label for="senderEmail">
                       <input
-                        type="text"
+                        type="email"
                         id="senderEmail"
                         placeholder="Your email"
+                        required
                       />
                     </label>
                     <label for="senderSubject">
                       <input
                         type="text"
                         id="senderSubject"
-                        placeholder="Email subject"
+                        placeholder="Mail subject"
+                        required
                       />
                     </label>
                     <textarea
@@ -224,7 +226,7 @@
                       cols="30"
                       rows="10"
                     ></textarea>
-                    <button>Send</button>
+                    <button class="active">Send</button>
                   </form>
                 </div>
               </section>

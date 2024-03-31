@@ -1160,7 +1160,6 @@
             </div>
           </div>
           <section class="popup">
-          <div class="status">Email sent successfully</div>
             <div class="popupContainer">
               <i
                 ><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -1190,20 +1189,23 @@
                         type="text"
                         id="senderName"
                         placeholder="Your name"
+                        required
                       />
                     </label>
                     <label for="senderEmail">
                       <input
-                        type="text"
+                        type="email"
                         id="senderEmail"
                         placeholder="Your email"
+                        required
                       />
                     </label>
                     <label for="senderSubject">
                       <input
                         type="text"
                         id="senderSubject"
-                        placeholder="Email subject"
+                        placeholder="Mail subject"
+                        required
                       />
                     </label>
                     <textarea
@@ -1213,7 +1215,7 @@
                       cols="30"
                       rows="10"
                     ></textarea>
-                    <button>Send</button>
+                    <button class="active">Send</button>
                   </form>
                 </div>
               </section>
