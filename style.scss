@@ -104,6 +104,30 @@ section.navbar {
   }
   @media (max-width: $tab-breakpoint) {
   }
+  .loadingIcon {
+    display: none;
+    position: absolute;
+    width: 97vw;
+    height: 97vh;
+    background-color: rgb(22 22 22 / 56%);
+    // display: grid;
+    z-index: 5;
+    place-content: center;
+    svg {
+      animation: spin 1.5s linear infinite;
+      width: 100px;
+      height: 100px;
+      fill: $active;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
 
 .sideMenu {

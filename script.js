@@ -85,8 +85,10 @@ let buttonEL;
 
 $(".menu li").click(function () {
   $(".menu li").removeClass("active");
+  console.log("getting start");
   $(this).addClass("active");
   slideOut();
+  $(".loadingIcon").css("display", "grid");
 
   let pageNumber = $(".menu li").index($(this));
 
@@ -102,12 +104,17 @@ $(".menu li").click(function () {
       // Target element to observe
     };
     xhr.onprogress = () => {
-      console.log("getting start");
       $("#pageLoading").addClass("showAnimation");
     };
     xhr.loading = () => {
       console.log("getting completed");
       $("#pageLoading").removeClass("showAnimation");
+    };
+    xhr.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        console.log("completed");
+        $(".loadingIcon").css("display", "none");
+      }
     };
   }
 
