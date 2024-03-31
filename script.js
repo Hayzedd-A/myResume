@@ -81,7 +81,7 @@ $(".closeIcon").click(function () {
   slideOut();
 });
 
-let statusEl;
+let buttonEL;
 
 $(".menu li").click(function () {
   $(".menu li").removeClass("active");
@@ -98,7 +98,7 @@ $(".menu li").click(function () {
     xhr.onload = function () {
       let page = this.response.split("---EndOfPage---")[pageNumber];
       $(".mainContentContainer").html(page);
-      statusEl = $(".status");
+      buttonEL = $(".status");
       // Target element to observe
     };
     xhr.onprogress = () => {
@@ -137,19 +137,19 @@ const animateElements = document.querySelectorAll(".animate__animated");
   emailjs.init("m7LyBc2cmZpjNjRTc");
 })();
 
-// let statusEl = $(".status");
 let callback = (status, message = "Email sent successfully") => {
-  statusEl.text(message);
+  buttonEL = $("form button");
+  buttonEL.text(message);
   console.log(status);
   if (status.status !== 200) {
     console.log("error");
-    statusEl.css({
+    buttonEL.css({
       top: "2em",
       borderColor: "red",
       backgroundColor: "rgb(250, 186, 186)",
     });
   } else {
-    statusEl.css({
+    buttonEL.css({
       top: "2em",
       display: "block",
       borderColor: "rgb(5, 85, 5)",
@@ -159,7 +159,8 @@ let callback = (status, message = "Email sent successfully") => {
     console.log("success");
   }
   setTimeout(function () {
-    statusEl.css({ top: "-2.5em", display: "none" });
+    buttonEL.text("Send");
+    buttonEL.css({});
   }, 3000);
 };
 
@@ -177,9 +178,9 @@ $(".mainContentContainer").on("click", "form button", function () {
 
   console.log("submitting", $(this));
 
-  $(this).text('Sending...')
-  $(this).css({'textDecoration': 'italics'})
-  $(this).attr('disabled', true)
+  $(this).text("Sending...");
+  $(this).css({ textDecoration: "italics" });
+  $(this).attr("disabled", true);
   // return false;
 
   let mailerName = $("#senderName").val();
