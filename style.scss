@@ -1,13 +1,25 @@
-$dark-fontColor: white;
-$dark-bgColor: rgb(32, 28, 28);
-$light-fontColor: black;
-$light-bgColor: antiquewhite;
-$active: rgb(255, 94, 0);
-$activeSec: rgb(135, 52, 4);
-$design: lighten(
-  $color: $active,
-  $amount: 30,
-);
+:root {
+  --fontColor: rgb(237, 247, 237);
+  --bgColor: rgb(8, 38, 17);
+  --bgSec: rgb(4, 72, 25);
+  --theme: rgb(21, 108, 48);
+  --themeSec: rgb(196, 238, 209);
+  --active: rgb(133 255 171);
+  // --light-fontColor: black;
+  // --light-bgColor: antiquewhite;
+  // --design: rgba(255, 94, 0, 0.3);
+}
+// --dark-fontColor: white;
+// --dark-bgColor: rgb(32, 28, 28);
+// --light-fontColor: black;
+// --light-bgColor: antiquewhite;
+// --theme: rgb(255, 94, 0);
+// --themeSec: rgb(135, 52, 4);
+// --design: lighten(
+//   $color: --theme,
+//   $amount: 30,
+// );
+
 $tab-breakpoint: 820px;
 $tabl-breakpoint: 1040px;
 $mobile-breakpoint: 760px;
@@ -24,9 +36,9 @@ $mobile-breakpoint: 760px;
 
 body {
   font-family: prompt, sans-serif;
-  background-color: $dark-bgColor;
+  background-color: var(--bgColor);
   font-size: 16px;
-  color: $dark-fontColor;
+  color: var(--fontColor);
 }
 h1 {
   margin: 5px 0;
@@ -55,7 +67,7 @@ section.navbar {
   @media (max-width: $tabl-breakpoint) {
     display: flex;
     position: fixed;
-    background: $dark-bgColor;
+    background: var(--bgSec);
     width: 100%;
     z-index: 2;
   }
@@ -65,7 +77,7 @@ section.navbar {
       width: 32px;
       height: 32px;
       &:hover {
-        fill: $active;
+        fill: var(--theme);
       }
     }
   }
@@ -117,7 +129,7 @@ section.navbar {
       animation: spin 1.5s linear infinite;
       width: 100px;
       height: 100px;
-      fill: $active;
+      fill: var(--theme);
     }
     @keyframes spin {
       0% {
@@ -136,7 +148,7 @@ section.navbar {
   width: 15em;
   display: flex;
   flex-direction: column;
-  background-color: lighten($color: $dark-bgColor, $amount: 30);
+  background-color: var(--bgSec);
   z-index: 3;
   .nameLogo {
     display: flex;
@@ -164,7 +176,7 @@ section.navbar {
     display: flex;
     padding-left: 2em;
     &.active {
-      color: $active;
+      color: var(--active);
     }
   }
   i {
@@ -207,7 +219,7 @@ section.navbar {
   .textContent {
     flex-grow: 1;
     span {
-      color: $active;
+      color: var(--active);
     }
   }
   .imageProfile {
@@ -232,7 +244,7 @@ section.navbar {
     width: 10em;
     height: 5px;
     border: none;
-    background-color: $active;
+    background-color: var(--theme);
     margin-top: 5px;
     border-radius: 2px;
     &#bottom {
@@ -277,7 +289,7 @@ section.navbar {
       }
     }
     .label {
-      color: $active;
+      color: var(--theme);
     }
     .content {
       color: rgb(206, 196, 196);
@@ -295,9 +307,9 @@ section.navbar {
     button {
       padding: 0.7em 2em;
       border: none;
-      background-color: $active;
+      background-color: var(--theme);
       border-radius: 2em;
-      color: $dark-fontColor;
+      color: var(--dark)-fontColor;
       font-size: 1.2rem;
       cursor: pointer;
       // transform: scaleX(1.3);
@@ -305,7 +317,7 @@ section.navbar {
   }
   .educations {
     .content {
-      background-color: lighten($color: $dark-bgColor, $amount: 10);
+      background-color: var(--bgSec);
       border-radius: 1em;
       padding: 2em 1em;
       display: grid;
@@ -324,7 +336,7 @@ section.navbar {
         position: relative;
         hr {
           height: 100%;
-          background-color: $active;
+          background-color: var(--theme);
           width: 5px;
           position: absolute;
           border: none;
@@ -333,7 +345,7 @@ section.navbar {
         div {
           height: 20px;
           width: 20px;
-          background-color: $active;
+          background-color: var(--theme);
           align-self: start;
           position: relative;
           right: 7px;
@@ -376,7 +388,7 @@ section.navbar {
         height: 64px;
       }
       box-shadow: 1px 1px 1px 1px gray;
-      background-color: lighten($active, 15);
+      background-color: var(--theme);
       padding: 1em;
       border-radius: 8px;
     }
@@ -404,7 +416,7 @@ section.navbar {
     gap: 1em 2em;
     transition: scale 0.1s linear;
     scale: 1;
-    background-color: lighten($active, 10);
+    background-color: var(--theme);
     padding: 1em;
     border-radius: 1em;
     height: 100%;
@@ -424,7 +436,7 @@ section.navbar {
 }
 .mainContent.contact {
   svg {
-    fill: $active;
+    fill: var(--theme);
     color: transparent;
     width: 48px;
     height: 48px;
@@ -461,9 +473,9 @@ section.navbar {
         cursor: pointer;
         &:hover {
           transform: translateY(-1em);
-          box-shadow: 2px 4px 8px 2px $active;
+          box-shadow: 2px 4px 8px 2px var(--theme);
           svg {
-            fill: green;
+            fill: var(--active);
           }
         }
         &:active {
@@ -514,8 +526,8 @@ section.navbar {
       }
       section.emailMe {
         display: none;
-        background-color: $dark-bgColor;
-        box-shadow: 3px 2px 5px 5px $active;
+        background-color: var(--dark)-bgColor;
+        box-shadow: 3px 2px 5px 5px var(--theme);
         padding: 1em;
         border-radius: 1em;
         gap: 1em;
@@ -530,14 +542,14 @@ section.navbar {
           }
           button {
             padding: 8px 1em;
-            border: 4px solid $active;
+            border: 4px solid var(--theme);
             // border: none;
             border-radius: 8px;
             color: white;
             // align-self: center;
             grid-column: span 2;
             width: 40%;
-            background-color: $active;
+            background-color: var(--theme);
             font-size: 1.3em;
             place-self: center;
             &.success {
@@ -549,8 +561,8 @@ section.navbar {
               background-color: rgb(255, 100, 100);
             }
             &.active:hover {
-              background-color: lighten($color: $active, $amount: 10);
-              border-color: $active;
+              background-color: #726363;
+              border-color: var(--theme);
             }
             &.no-hover:hover {
               // background-color: transparent;
@@ -574,7 +586,7 @@ section.navbar {
       .mapContainer {
         display: none;
         position: relative;
-        border: 2px solid $activeSec;
+        border: 2px solid --themeSec;
         background-color: rgb(146, 146, 146);
         height: 75vh;
 

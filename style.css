@@ -1,3 +1,12 @@
+:root {
+  --fontColor: rgb(237, 247, 237);
+  --bgColor: rgb(8, 38, 17);
+  --bgSec: rgb(4, 72, 25);
+  --theme: rgb(21, 108, 48);
+  --themeSec: rgb(196, 238, 209);
+  --active: rgb(133 255 171);
+}
+
 @font-face {
   font-family: "prompt";
   src: url("prompt-font/Prompt-Regular.ttf");
@@ -9,9 +18,9 @@
 
 body {
   font-family: prompt, sans-serif;
-  background-color: rgb(32, 28, 28);
+  background-color: var(--bgColor);
   font-size: 16px;
-  color: white;
+  color: var(--fontColor);
 }
 
 h1 {
@@ -45,7 +54,7 @@ section.navbar {
   section.navbar {
     display: flex;
     position: fixed;
-    background: rgb(32, 28, 28);
+    background: var(--bgSec);
     width: 100%;
     z-index: 2;
   }
@@ -58,7 +67,7 @@ section.navbar .menuIcon svg {
   height: 32px;
 }
 section.navbar .menuIcon svg:hover {
-  fill: rgb(255, 94, 0);
+  fill: var(--theme);
 }
 section.navbar .theme {
   transition: 0.5s ease-in-out rotate;
@@ -105,7 +114,7 @@ section.navbar .theme svg {
   animation: spin 1.5s linear infinite;
   width: 100px;
   height: 100px;
-  fill: rgb(255, 94, 0);
+  fill: var(--theme);
 }
 @keyframes spin {
   0% {
@@ -122,7 +131,7 @@ section.navbar .theme svg {
   width: 15em;
   display: flex;
   flex-direction: column;
-  background-color: #726363;
+  background-color: var(--bgSec);
   z-index: 3;
 }
 .sideMenu .nameLogo {
@@ -152,7 +161,7 @@ section.navbar .theme svg {
   padding-left: 2em;
 }
 .sideMenu li.active {
-  color: rgb(255, 94, 0);
+  color: var(--active);
 }
 .sideMenu i {
   margin-right: 1em;
@@ -199,7 +208,7 @@ section.navbar .theme svg {
   flex-grow: 1;
 }
 .mainContent.home .textContent span {
-  color: rgb(255, 94, 0);
+  color: var(--active);
 }
 .mainContent.home .imageProfile {
   margin-top: 2em;
@@ -223,7 +232,7 @@ section.navbar .theme svg {
   width: 10em;
   height: 5px;
   border: none;
-  background-color: rgb(255, 94, 0);
+  background-color: var(--theme);
   margin-top: 5px;
   border-radius: 2px;
 }
@@ -269,7 +278,7 @@ section.navbar .theme svg {
   padding: 10px 5px 10px 0;
 }
 .mainContent.about .details .label {
-  color: rgb(255, 94, 0);
+  color: var(--theme);
 }
 .mainContent.about .details .content {
   color: rgb(206, 196, 196);
@@ -286,14 +295,14 @@ section.navbar .theme svg {
 .mainContent.about .buttons button {
   padding: 0.7em 2em;
   border: none;
-  background-color: rgb(255, 94, 0);
+  background-color: var(--theme);
   border-radius: 2em;
-  color: white;
+  color: var(--dark) -fontColor;
   font-size: 1.2rem;
   cursor: pointer;
 }
 .mainContent.about .educations .content {
-  background-color: #3b3434;
+  background-color: var(--bgSec);
   border-radius: 1em;
   padding: 2em 1em;
   display: grid;
@@ -314,7 +323,7 @@ section.navbar .theme svg {
 }
 .mainContent.about .educations .content .bars hr {
   height: 100%;
-  background-color: rgb(255, 94, 0);
+  background-color: var(--theme);
   width: 5px;
   position: absolute;
   border: none;
@@ -323,7 +332,7 @@ section.navbar .theme svg {
 .mainContent.about .educations .content .bars div {
   height: 20px;
   width: 20px;
-  background-color: rgb(255, 94, 0);
+  background-color: var(--theme);
   align-self: start;
   position: relative;
   right: 7px;
@@ -352,7 +361,7 @@ section.navbar .theme svg {
   display: grid;
   gap: 1em;
   box-shadow: 1px 1px 1px 1px gray;
-  background-color: #ff8e4d;
+  background-color: var(--theme);
   padding: 1em;
   border-radius: 8px;
 }
@@ -395,7 +404,7 @@ section.navbar .theme svg {
   gap: 1em 2em;
   transition: scale 0.1s linear;
   scale: 1;
-  background-color: #ff7e33;
+  background-color: var(--theme);
   padding: 1em;
   border-radius: 1em;
   height: 100%;
@@ -411,7 +420,7 @@ section.navbar .theme svg {
   width: unset;
 }
 .mainContent.contact svg {
-  fill: rgb(255, 94, 0);
+  fill: var(--theme);
   color: transparent;
   width: 48px;
   height: 48px;
@@ -453,10 +462,10 @@ section.navbar .theme svg {
 }
 .mainContent.contact .bodyContent .contactList .contact:hover {
   transform: translateY(-1em);
-  box-shadow: 2px 4px 8px 2px rgb(255, 94, 0);
+  box-shadow: 2px 4px 8px 2px var(--theme);
 }
 .mainContent.contact .bodyContent .contactList .contact:hover svg {
-  fill: green;
+  fill: var(--active);
 }
 .mainContent.contact .bodyContent .contactList .contact:active {
   scale: 0.9;
@@ -503,8 +512,8 @@ section.navbar .theme svg {
 }
 .mainContent.contact section.popup .popupContainer section.emailMe {
   display: none;
-  background-color: rgb(32, 28, 28);
-  box-shadow: 3px 2px 5px 5px rgb(255, 94, 0);
+  background-color: var(--dark) -bgColor;
+  box-shadow: 3px 2px 5px 5px var(--theme);
   padding: 1em;
   border-radius: 1em;
   gap: 1em;
@@ -521,12 +530,12 @@ section.navbar .theme svg {
 }
 .mainContent.contact section.popup .popupContainer section.emailMe form button {
   padding: 8px 1em;
-  border: 4px solid rgb(255, 94, 0);
+  border: 4px solid var(--theme);
   border-radius: 8px;
   color: white;
   grid-column: span 2;
   width: 40%;
-  background-color: rgb(255, 94, 0);
+  background-color: var(--theme);
   font-size: 1.3em;
   place-self: center;
 }
@@ -539,8 +548,8 @@ section.navbar .theme svg {
   background-color: rgb(255, 100, 100);
 }
 .mainContent.contact section.popup .popupContainer section.emailMe form button.active:hover {
-  background-color: #ff7e33;
-  border-color: rgb(255, 94, 0);
+  background-color: #726363;
+  border-color: var(--theme);
 }
 .mainContent.contact section.popup .popupContainer section.emailMe form button img {
   width: 48px;
@@ -556,7 +565,7 @@ section.navbar .theme svg {
 .mainContent.contact section.popup .popupContainer .mapContainer {
   display: none;
   position: relative;
-  border: 2px solid rgb(135, 52, 4);
+  border: 2px solid --themeSec;
   background-color: rgb(146, 146, 146);
   height: 75vh;
 }
