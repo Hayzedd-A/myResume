@@ -1043,7 +1043,7 @@
               </div>
               <div class="contactList">
                 <div class="contact phone">
-                  <a href="tel:+23481602424">
+                  <a href="tel:+2348081602424">
                     <i
                       ><svg
                         class="feather feather-phone"
