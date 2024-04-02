@@ -3,6 +3,7 @@
   --bgColor: rgb(8, 38, 17);
   --bgSec: rgb(4, 72, 25);
   --theme: rgb(21, 108, 48);
+  --themeDup: rgb(21, 108, 48);
   --themeSec: rgb(196, 238, 209);
   --active: rgb(133 255 171);
 }
@@ -295,9 +296,9 @@ section.navbar .theme svg {
 .mainContent.about .buttons button {
   padding: 0.7em 2em;
   border: none;
-  background-color: var(--theme);
+  background-color: var(--themeSec);
   border-radius: 2em;
-  color: var(--dark) -fontColor;
+  color: var(--fontColor);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -361,7 +362,7 @@ section.navbar .theme svg {
   display: grid;
   gap: 1em;
   box-shadow: 1px 1px 1px 1px gray;
-  background-color: var(--theme);
+  background-color: var(--themeDup);
   padding: 1em;
   border-radius: 8px;
 }
@@ -404,7 +405,7 @@ section.navbar .theme svg {
   gap: 1em 2em;
   transition: scale 0.1s linear;
   scale: 1;
-  background-color: var(--theme);
+  background-color: var(--themeDup);
   padding: 1em;
   border-radius: 1em;
   height: 100%;
@@ -420,7 +421,7 @@ section.navbar .theme svg {
   width: unset;
 }
 .mainContent.contact svg {
-  fill: var(--theme);
+  fill: var(--themeSec);
   color: transparent;
   width: 48px;
   height: 48px;

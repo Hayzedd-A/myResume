@@ -17,6 +17,7 @@ function initMap() {
   });
 }
 let darkBG = true;
+let root = document.documentElement;
 $("#themeSwitch").click(function () {
   console.log($("#themeSwitch").css("rotate"));
   $(this).css(
@@ -32,37 +33,23 @@ $("#themeSwitch").click(function () {
   console.log($("#themeSwitch svg").css("fill"));
 
   if (darkBG) {
-    document.documentElement.style.setProperty("--dark-fontColor", "black");
-    document.documentElement.style.setProperty(
-      "--dark-bgColor",
-      "antiquewhite"
-    );
+    root.style.setProperty("--fontColor", "rgb(8, 38, 17)");
+    root.style.setProperty("--bgColor", "rgb(237, 247, 237)");
+    root.style.setProperty("--bgSec", "rgb(196, 238, 209)");
+    root.style.setProperty("--active", "rgb(4, 72, 25)");
+    root.style.setProperty("--themeDup", "rgb(133 255 171)");
+
     darkBG = false;
   } else {
-    document.documentElement.style.setProperty("--dark-fontColor", "white");
-    document.documentElement.style.setProperty(
-      "--dark-bgColor",
-      "rgb(32, 28, 28)"
-    );
+    root.style.setProperty("--fontColor", "rgb(237, 247, 237)");
+    root.style.setProperty("--bgColor", "rgb(8, 38, 17)");
+    root.style.setProperty("--bgSec", "rgb(4, 72, 25)");
+    root.style.setProperty("--theme", "rgb(21, 108, 48)");
+    root.style.setProperty("--themeDup", "rgb(21, 108, 48)");
+    root.style.setProperty("--themeSec", "rgb(196, 238, 209)");
+    root.style.setProperty("--active", "rgb(133 255 171)");
     darkBG = true;
   }
-
-  $("body").css({
-    "background-color":
-      $("body").css("backgroundColor") == "rgb(32, 28, 28)"
-        ? "rgb(255, 255, 255)"
-        : "rgb(32, 28, 28)",
-    color:
-      $("body").css("color") == "rgb(32, 28, 28)"
-        ? "rgb(255, 255, 255)"
-        : "rgb(32, 28, 28)",
-  });
-  $(".sideMenu, .educations .content, .navbar").css({
-    "background-color":
-      $(".sideMenu").css("backgroundColor") == "rgb(114, 99, 99)"
-        ? "rgb(178, 163, 163)"
-        : "rgb(114, 99, 99)",
-  });
 });
 
 const slideIn = () => {

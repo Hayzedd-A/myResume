@@ -3,6 +3,7 @@
   --bgColor: rgb(8, 38, 17);
   --bgSec: rgb(4, 72, 25);
   --theme: rgb(21, 108, 48);
+  --themeDup: rgb(21, 108, 48);
   --themeSec: rgb(196, 238, 209);
   --active: rgb(133 255 171);
   // --light-fontColor: black;
@@ -307,9 +308,9 @@ section.navbar {
     button {
       padding: 0.7em 2em;
       border: none;
-      background-color: var(--theme);
+      background-color: var(--themeSec);
       border-radius: 2em;
-      color: var(--dark)-fontColor;
+      color: var(--fontColor);
       font-size: 1.2rem;
       cursor: pointer;
       // transform: scaleX(1.3);
@@ -376,6 +377,10 @@ section.navbar {
     .service {
       display: grid;
       gap: 1em;
+      box-shadow: 1px 1px 1px 1px gray;
+      background-color: var(--themeDup);
+      padding: 1em;
+      border-radius: 8px;
       .icon {
         display: flex;
         width: 100%;
@@ -387,10 +392,6 @@ section.navbar {
         width: 64px;
         height: 64px;
       }
-      box-shadow: 1px 1px 1px 1px gray;
-      background-color: var(--theme);
-      padding: 1em;
-      border-radius: 8px;
     }
     @media (max-width: 880px) {
       grid-template-columns: repeat(2, 1fr);
@@ -416,7 +417,7 @@ section.navbar {
     gap: 1em 2em;
     transition: scale 0.1s linear;
     scale: 1;
-    background-color: var(--theme);
+    background-color: var(--themeDup);
     padding: 1em;
     border-radius: 1em;
     height: 100%;
@@ -436,7 +437,7 @@ section.navbar {
 }
 .mainContent.contact {
   svg {
-    fill: var(--theme);
+    fill: var(--themeSec);
     color: transparent;
     width: 48px;
     height: 48px;
