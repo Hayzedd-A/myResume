@@ -44,7 +44,7 @@
                 </span>
               </div>
               <div class="buttons">
-                <a href="https://drive.google.com/file/d/1IzTyLeuH2ONvnPiBhWEMES77GM_bqiEt/view?usp=sharing" target="_blank"><button id="downloadCV">Download CV</button></a>
+                <a href="https://drive.google.com/file/d/1_CyTCbamSB9QXotP8j7zenPW2iexwZZp/view?usp=sharing" target="_blank"><button id="downloadCV">Download CV</button></a>
               </div>
             </div>
 

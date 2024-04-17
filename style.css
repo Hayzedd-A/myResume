@@ -282,7 +282,7 @@ section.navbar .theme svg {
   color: var(--theme);
 }
 .mainContent.about .details .content {
-  color: rgb(206, 196, 196);
+  color: rgb(45, 133, 58);
 }
 @media (max-width: 760px) {
   .mainContent.about .details {
@@ -298,7 +298,7 @@ section.navbar .theme svg {
   border: none;
   background-color: var(--themeSec);
   border-radius: 2em;
-  color: var(--fontColor);
+  color: rgb(8, 38, 17);
   font-size: 1.2rem;
   cursor: pointer;
 }

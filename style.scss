@@ -6,20 +6,7 @@
   --themeDup: rgb(21, 108, 48);
   --themeSec: rgb(196, 238, 209);
   --active: rgb(133 255 171);
-  // --light-fontColor: black;
-  // --light-bgColor: antiquewhite;
-  // --design: rgba(255, 94, 0, 0.3);
 }
-// --dark-fontColor: white;
-// --dark-bgColor: rgb(32, 28, 28);
-// --light-fontColor: black;
-// --light-bgColor: antiquewhite;
-// --theme: rgb(255, 94, 0);
-// --themeSec: rgb(135, 52, 4);
-// --design: lighten(
-//   $color: --theme,
-//   $amount: 30,
-// );
 
 $tab-breakpoint: 820px;
 $tabl-breakpoint: 1040px;
@@ -293,7 +280,7 @@ section.navbar {
       color: var(--theme);
     }
     .content {
-      color: rgb(206, 196, 196);
+      color: rgb(45, 133, 58);
     }
     @media (max-width: $mobile-breakpoint) {
       flex-flow: column;
@@ -310,7 +297,7 @@ section.navbar {
       border: none;
       background-color: var(--themeSec);
       border-radius: 2em;
-      color: var(--fontColor);
+      color: rgb(8, 38, 17);
       font-size: 1.2rem;
       cursor: pointer;
       // transform: scaleX(1.3);
