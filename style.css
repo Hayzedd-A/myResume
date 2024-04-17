@@ -296,7 +296,7 @@ section.navbar .theme svg {
 .mainContent.about .buttons button {
   padding: 0.7em 2em;
   border: none;
-  background-color: var(--themeSec);
+  background-color: var(--bgSec);
   border-radius: 2em;
   color: rgb(8, 38, 17);
   font-size: 1.2rem;
