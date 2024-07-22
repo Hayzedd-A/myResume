@@ -186,6 +186,23 @@ section.navbar .theme svg {
     left: 0;
   }
 }
+.sideMenu button {
+  padding: 0.3em 1em;
+  background-color: var(--bgSec);
+  color: var(--active);
+  border: 2px var(--theme);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.sideMenu button:hover {
+  background-color: var(--themeDup);
+  color: var(--active);
+}
+@media (max-width: 1040px) {
+  .sideMenu button {
+    display: none;
+  }
+}
 
 .mainContentContainer {
   height: 100vh;
@@ -296,7 +313,7 @@ section.navbar .theme svg {
 .mainContent.about .buttons button {
   padding: 0.7em 2em;
   border: none;
-  background-color: var(--bgSec);
+  background-color: var(--themeSec);
   border-radius: 2em;
   color: rgb(8, 38, 17);
   font-size: 1.2rem;

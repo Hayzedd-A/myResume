@@ -18,9 +18,9 @@ function initMap() {
 }
 let darkBG = true;
 let root = document.documentElement;
-$("#themeSwitch").click(function () {
+$("#themeSwitch, .themeSwitch").click(function () {
   console.log($("#themeSwitch").css("rotate"));
-  $(this).css(
+  $("#themeSwitch").css(
     "rotate",
     $("#themeSwitch").css("rotate") == "none" ? "180deg" : "none"
   );

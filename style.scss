@@ -187,6 +187,21 @@ section.navbar {
       left: 0;
     }
   }
+  button {
+    padding: 0.3em 1em;
+    background-color: var(--bgSec);
+    color: var(--active);
+    border: 2px var(--theme);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: var(--themeDup);
+      color: var(--active);
+    }
+    @media (max-width: $tabl-breakpoint) {
+      display: none;
+    }
+  }
 }
 
 .mainContentContainer {
