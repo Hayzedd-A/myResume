@@ -1127,7 +1127,7 @@
                         </g>
                       </svg>
                     </i>
-                    <span>Whatapp</span>
+                    <span>Whastapp</span>
                     <span>+2348081602424</span>
                   </a>
                 </div>
