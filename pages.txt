@@ -31,7 +31,7 @@
             <div class="info">
               <div class="details">
                 <span class="row1 animate__animated animate__fadeInRight">
-                  <span class="label">Birthday: </span><span class="content">21 Febraury 1999</span>
+                  <span class="label">Birthday: </span><span class="content">21 Febraury 1996</span>
                   <span class="label">LinkIn: </span><span class="content"><a href="https://linkedIn.com/in/adebayo-azeez-ola">linkedIn.com/in/adebayo</a></span>
                   <span class="label">Degree: </span><span class="content">B.Sc computer science</span>
                   <span class="label">City: </span><span class="content">Lagos</span>
@@ -1127,7 +1127,7 @@
                         </g>
                       </svg>
                     </i>
-                    <span>Whastapp</span>
+                    <span>Whatsapp</span>
                     <span>+2348081602424</span>
                   </a>
                 </div>
