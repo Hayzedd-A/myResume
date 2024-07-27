@@ -31,7 +31,7 @@
             <div class="info">
               <div class="details">
                 <span class="row1 animate__animated animate__fadeInRight">
-                  <span class="label">Birthday: </span><span class="content">21 Febraury 1999</span>
+                  <span class="label">Github: </span><span class="content"><a href="https://github.com/Hayzedd-A">Github.com/Hayzedd-A</a></span>
                   <span class="label">LinkIn: </span><span class="content"><a href="https://linkedIn.com/in/adebayo-azeez-ola">linkedIn.com/in/adebayo</a></span>
                   <span class="label">Degree: </span><span class="content">B.Sc computer science</span>
                   <span class="label">City: </span><span class="content">Lagos</span>
@@ -59,6 +59,7 @@
                   <div style="--p: 2;" class="bar"></div>
                   <div style="--p: 3;" class="bar"></div>
                   <div style="--p: 4;" class="bar"></div>
+                  <div style="--p: 5;" class="bar"></div>
                 </div>
                 <div class="education  animate__fadeInRight repair">
                   <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2013 - 2015</div>
@@ -80,6 +81,12 @@
                   <h3>Frontend web developer</h3>
                   <p>Expert in frontend web development, crafting dynamic and user-friendly websites using HTML, CSS, and JavaScript, implementing responsive design techniques for optimal user experience.</p>
                 </div>
+                <div class="education  animate__fadeInRight software">
+                  <div class="year"><i><img src="icons/year.png" alt="year icon"></i>2023 - TILL DATE</div>
+                  <h3>Backend developer</h3>
+                  <p>Expert in implementing robust server-side applications using Express, Flask, and Django. Excel in creating efficient, maintainable, and high-performance backend solutions that drive seamless functionality and enhance user experience in web applications. </p>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -864,7 +871,7 @@
             </div>
             <div class="services">
               <a
-                href="https://my-resume-git-master-hayzedd-a.vercel.app/"
+                href="https://my-resume-hayzeddas-projects.vercel.app/"
                 target="_blank"
               >
                 <div class="service">
@@ -1127,7 +1134,7 @@
                         </g>
                       </svg>
                     </i>
-                    <span>Whastapp</span>
+                    <span>Whatsapp</span>
                     <span>+2348081602424</span>
                   </a>
                 </div>

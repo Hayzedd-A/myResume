@@ -327,6 +327,7 @@ section.navbar .theme svg {
   height: -moz-min-content;
   height: min-content;
   grid-template-columns: 20px 1fr;
+  grid-template-rows: repeat(5, 1fr);
   margin-bottom: 2em;
 }
 .mainContent.about .educations .content img {
@@ -334,7 +335,7 @@ section.navbar .theme svg {
   fill: white;
 }
 .mainContent.about .educations .content .bars {
-  grid-row: 1/span 4;
+  grid-row: 1/span 5;
   display: grid;
   align-items: center;
   position: relative;
