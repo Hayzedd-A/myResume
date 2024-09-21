@@ -892,6 +892,24 @@
                   </p>
                 </div>
               </a>
+              <a href="https://store-keeper-frontend.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                      
+                        src="/icons/projects/store_keeper.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A store sale</div>
+                  <p>
+                    A full web app for managing sales in a store or market. Built with react, fetches the product from the an express js server through an API. When each sale is
+                    made, the app helps to get the product, record the sale and
+                    generate an invoice.
+                  </p>
+                </div>
+              </a>
               <a href="https://school-app-ebon.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
@@ -929,25 +947,23 @@
                   </p>
                 </div>
               </a>
-              <a href="https://store-keeper-frontend.vercel.app/" target="_blank">
+
+              <a href="https://todo-frontend-six-green.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
                     <i
                       ><img
                       
-                        src="/icons/projects/store_keeper.png"
+                        src="/icons/projects/todo_app.png"
                         alt="web design icon"
                     /></i>
                   </div>
-                  <div class="title">A store sale</div>
+                  <div class="title">A Todo App</div>
                   <p>
-                    A full web app for managing sales in a store or market. Built with react, fetches the product from the an express js server through an API. When each sale is
-                    made, the app helps to get the product, record the sale and
-                    generate an invoice.
+                    A full-stack project with a React-powered frontend and an Express.js backend. It features user authentication, the ability to add and manage todos with due dates, and seamless data management through MySQL. This project highlights my skills in building responsive user interfaces, secure backend services, and efficient database management..
                   </p>
                 </div>
               </a>
-
               <a href="https://machine-modeling.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
