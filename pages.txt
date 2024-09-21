@@ -982,21 +982,6 @@
                   </p>
                 </div>
               </a>
-              <a href="https://adebayoazeez37-gl98.vercel.app/" target="_blank">
-                <div class="service">
-                  <div class="icon">
-                    <i
-                      ><img
-                        src="/icons/projects/belab.png"
-                        alt="web design icon"
-                    /></i>
-                  </div>
-                  <div class="title">Simple Landing page</div>
-                  <p>
-                    A simple responsive landing page for an interior designer.
-                  </p>
-                </div>
-              </a>
               <a href="https://calendar-puce.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
@@ -1018,6 +1003,38 @@
                   </p>
                 </div>
               </a>
+              <a href="https://adebayoazeez37-gl98.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/belab.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">Simple Landing page</div>
+                  <p>
+                    A simple responsive landing page for an interior designer.
+                  </p>
+                </div>
+              </a>
+              
+              <a href="https://netflix-clone-statics.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/netflix.jpg"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">The netflix homepage clone</div>
+                  <p>
+                    A responsive clone of the netflix home page. using HTML, SCSS and jQuery.
+                  </p>
+                </div>
+              </a>
+
               <a href="https://d-dhub.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
