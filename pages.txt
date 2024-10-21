@@ -928,6 +928,23 @@
                   </p>
                 </div>
               </a>
+                <a href="https://utility-service-frontend.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/utility_service.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">An utility service</div>
+                  <p>
+                    A complete onboarding process for an utility service app. Features are, signup, email verification, login, reset password. uses JWT token for secure login.
+                    Frontend is built with react while the backend is built with express js.
+                    </p>
+                </div>
+              </a>
+
               <a href="https://store-sales.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
@@ -964,24 +981,24 @@
                   </p>
                 </div>
               </a>
-              <a href="https://machine-modeling.vercel.app/" target="_blank">
+              
+              <a href="https://google-book-store-api-lime.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
                     <i
                       ><img
-                        src="/icons/projects/imageModeling.png"
+                        src="/icons/projects/bookStore.png"
                         alt="web design icon"
                     /></i>
                   </div>
-                  <div class="title">An fruit image identifier</div>
+                  <div class="title">The google book API</div>
                   <p>
-                    A capstone project to identify an apple, kiwi, apricot and
-                    orange. Uses a image file picker for image uploading, uses
-                    an async function to submit as a form to an API and then
-                    render the result.
+                    A dynamic Books Search App built with react that fetches data from the Google Books API and allows users to search for books by title, author, or keyword.
+                     By clicking on any book, users are taken to a dedicated single page that provides more detailed information about the book, including its description, publisher, publication date.
                   </p>
                 </div>
               </a>
+
               <a href="https://calendar-puce.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
@@ -1003,6 +1020,27 @@
                   </p>
                 </div>
               </a>
+              
+              <a href="https://machine-modeling.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/imageModeling.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">An fruit image identifier</div>
+                  <p>
+                    A capstone project to identify an apple, kiwi, apricot and
+                    orange. Uses a image file picker for image uploading, uses
+                    an async function to submit as a form to an API and then
+                    render the result.
+                  </p>
+                </div>
+              </a>
+              
+
               <a href="https://adebayoazeez37-gl98.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
