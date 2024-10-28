@@ -22,10 +22,7 @@
           </div>
           <div class="paragraph animate__animated animate__fadeInLeft">
             <h3>I'm Adebayo Azeez, I'm a <span> web developer</span></h3>
-            <p>I'm a talented programmer, I'm a computer science student of the Federal University of Agriculture,
-              Abeokuta. I build web application using HTML, CSS and JavaScript. I uses bootstrap for css and SCSS
-              framework, I uses jQuery for JavaScript and i also use AJAX for asycronous request for updating the content
-              of HTML. </p>
+            <p>I'm a skilled web developer. I specialize in building responsive, interactive web applications using a modern tech stack, including HTML, CSS, JavaScript, React, and Tailwind. My backend skills include Express.js and working with various databases to ensure efficient data management. </p>
           </div>
           <div class="personalInfo">
             <div class="info">
