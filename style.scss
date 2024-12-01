@@ -73,9 +73,9 @@ section.navbar {
     transition: 0.5s ease-in-out rotate;
     transform-origin: center;
     cursor: pointer;
-
+    height: 3em;
     svg {
-      fill: white;
+      fill: #85ffab;
       width: 48px;
     }
   }

@@ -24,11 +24,11 @@ $("#themeSwitch, .themeSwitch").click(function () {
     "rotate",
     $("#themeSwitch").css("rotate") == "none" ? "180deg" : "none"
   );
-  $("#themeSwitch svg").css(
+  $("#themeSwitch svg path").css(
     "fill",
-    $("#themeSwitch svg").css("fill") == "rgb(255, 255, 255)"
-      ? "black"
-      : "white"
+    $("#themeSwitch svg path").css("fill") == "rgb(8, 38, 17)"
+      ? "#85ffab"
+      : "rgb(8, 38, 17)"
   );
   console.log($("#themeSwitch svg").css("fill"));
 
