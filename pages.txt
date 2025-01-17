@@ -1009,6 +1009,22 @@
                 </div>
               </a>
 
+              <a href="https://esovew.vercel.app/" target="_blank">
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/esovew.png"
+                        alt="web design icon"
+                    /></i>
+                  </div>
+                  <div class="title">A Branding website landing page</div>
+                  <p>
+                    A simple landing page of a branding website, built with react and sass.
+                    </p>
+                </div>
+              </a>
+
               <a href="https://calendar-puce.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
@@ -1067,7 +1083,7 @@
                 </div>
               </a>
               
-              <a href="https://netflix-clone-statics.vercel.app/" target="_blank">
+              <a href="https://netfleex-clone-statics.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
                     <i
