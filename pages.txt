@@ -1083,7 +1083,7 @@
                 </div>
               </a>
               
-              <a href="https://netfleex-clone-statics.vercel.app/" target="_blank">
+              <a href="https://net-clone-statics.vercel.app/" target="_blank">
                 <div class="service">
                   <div class="icon">
                     <i
