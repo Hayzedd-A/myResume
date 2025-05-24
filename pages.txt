@@ -3,7 +3,7 @@
     <h1>My name is <span>Adebayo Azeez</span></h1>
     <h2>I am a <span>Web Developer</span></h2>
     <p>
-      I'm a fullstack web developer with 3 years intensive experience.
+      I'm a fullstack web developer with 4 years intensive experience.
       I'm expert in creating modern responsive and functioning web
       applications.
     </p>
@@ -899,6 +899,25 @@
                     HTML, SCSS and JQuery. Uses an XMLHttpRequest to get the
                     content of each page from a txt file. Designed in both dark
                     and light theme.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://cron-manager.vercel.app/"
+                target="_blank"
+              >
+                <div class="service">
+                  <div class="icon">
+                    <i
+                      ><img
+                        src="/icons/projects/cron-manager.png"
+                        loading="lazy"
+                        alt="cron manager banner"
+                    /></i>
+                  </div>
+                  <div class="title">Live Cron Manager</div>
+                  <p>
+                    An automated task scheduler and management dashboard built with Next.js + Typescript + Tailwind for real-time monitoring and control, and node-cron built with Node.js for running recurring backend jobs. The system includes JWT-based authentication, RESTful API communication, and is deployed using Vercel, with MongoDB for handling data storage. This project demonstrates my ability to build and deploy full-stack applications that combine background automation with a user-friendly management interface.
                   </p>
                 </div>
               </a>
